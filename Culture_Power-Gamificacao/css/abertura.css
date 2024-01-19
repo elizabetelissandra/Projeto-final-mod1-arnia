@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(65, 10, 117);
+}
+.divAbertura{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20% auto;
+}
+
+.divAbertura button{
+    margin: 50px;
+    width: 25%;
+    height: 72px;
+    padding: 10px;
+    background-color:#DCB6F8;
+    color: #502B6B;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 25px;
+}
