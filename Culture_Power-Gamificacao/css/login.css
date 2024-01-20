@@ -12,7 +12,9 @@ display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(86, 25, 143);
+    background-image: url(../img/banner-abertura.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 50vw;
     height: 100vh;
 }

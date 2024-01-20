@@ -1,13 +1,16 @@
 body{
-    background-color: rgb(65, 10, 117);
+    background-image: url(../img/banner-abertura.png);
+    background-color: #502B6B;
+    background-size:130%;
+    background-repeat: no-repeat;
 }
 .divAbertura{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20% auto;
+    margin: 23% auto;
+    
 }
-
 .divAbertura button{
     margin: 50px;
     width: 25%;
