@@ -205,3 +205,41 @@
     font-weight: 700;
     margin: 0 5.8em;
 }
+.produtosResgatar{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em;
+    
+}
+.produtosResgatar div{
+    display: flex;
+    flex-direction: column; 
+    align-items: stretch;
+    width: 16%;
+    border-radius: 16px;
+}
+.produtosResgatar img{
+    max-width: 270px;
+    margin: 0 auto;
+    
+}
+.produtosResgatar h2{
+    font-size: 14px;
+    text-align: start;
+    margin: 0.5em;
+}
+.produtosResgatar span{
+    color: #9E9E9E;
+    font-size: 12px;
+    margin: 0.5em;
+}
+.produtos button{
+    background-color: #502B6B;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 0.8em;
+    width: 80%;
+    margin: 0 auto;
+
+}
