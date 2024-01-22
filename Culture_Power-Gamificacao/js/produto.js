@@ -10,7 +10,7 @@ const getProdutos = async(id) => {
 }
 
 const resgatarProduto = (id) =>{
-    window.location = `../html/produto-resgatado.html?id=${id}`
+    window.location = `../html/produtoResgatado.html?id=${id}`
 }
 
 const mostrarProdutos = (produtos) => {
@@ -21,7 +21,7 @@ const mostrarProdutos = (produtos) => {
     </div>
     <div>
         <h2 class='nome-produto'>${produtos.nome}</h2>
-        <span> Por: ${produtos.preco} <i class="fa-regular fa-gem"></i></span>
+        <span> Por: <b>${produtos.preco}</b> <i class="fa-regular fa-gem"></i></span>
         <p>${produtos.descricao}</p>
         <button class='resgatar' onclick="resgatarProduto('${produtos.id}')">Resgatar</button>
     </div>
