@@ -9,16 +9,21 @@ const getProdutos = async(id) => {
     return dados[0]      //Retorna apenas um único produto, pois estamos buscando por ID e não por array de produtos
 }
 
+const resgatarProduto = (id) =>{
+    window.location = `../html/produto-resgatado.html?id=${id}`
+}
+
 const mostrarProdutos = (produtos) => {
     divProdutosSelecionados.innerHTML +=
     `
     <div>
-    <img src="${produtos.imagem}" alt="">
+        <img src="${produtos.imagem}" alt="">
     </div>
     <div>
-    <h2>${produtos.nome}</h2>
-    <span>R$ ${produtos.preco}.00</span>
-    <p>${produtos.descricao}</p>
+        <h2 class='nome-produto'>${produtos.nome}</h2>
+        <span> Por: ${produtos.preco} <i class="fa-regular fa-gem"></i></span>
+        <p>${produtos.descricao}</p>
+        <button class='resgatar' onclick="resgatarProduto('${produtos.id}')">Resgatar</button>
     </div>
     `
 }
