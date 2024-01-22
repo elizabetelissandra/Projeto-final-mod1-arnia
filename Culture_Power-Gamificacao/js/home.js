@@ -1,3 +1,7 @@
+const resgatarProduto = (id) => {
+        window.location.href = `../html/produto.html?id=${id}`
+    }
+
 const mostrarDados = (produtos) => {
     const divProdutos = document.querySelector('.produtosResgatar')
 
@@ -6,14 +10,14 @@ const mostrarDados = (produtos) => {
         const nome = produto.nome
         const preco = produto.preco
         const descricao = produto.descricao
-        const imagem = produto.image
+        const imagem = produto.imagem
 
         divProdutos.innerHTML += 
         `   <div>
                 <img src="${imagem}">
                 <h2>${nome}</h2>
                 <span>${preco} jóias</span>
-                <button>Resgatar</button>
+                <button class="resgatar" onclick="resgatarProduto('${id}')">Resgatar</button>
             </div> `
     })
 }

@@ -208,7 +208,7 @@
 .produtosResgatar{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 2em;
+    margin: 2em 0;
     
 }
 .produtosResgatar div{
@@ -241,5 +241,4 @@
     padding: 0.8em;
     width: 80%;
     margin: 0 auto;
-
 }
