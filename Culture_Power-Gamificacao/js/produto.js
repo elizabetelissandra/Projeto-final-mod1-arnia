@@ -11,14 +11,10 @@ const getProdutos = async(id) => {
 }
 
 const resgatarProduto = async(id) =>{
-        const produto = {
-            id,
-        }
-        await salvarResgate(produto)
-    
-
-    
-
+    const produto = {
+        id
+    }
+    await salvarResgate(produto)
     window.location = `../html/produtoResgatado.html?id=${id}`
 }
 
@@ -26,7 +22,6 @@ const salvarResgate = async() => {
     
     const url = 'http://localhost:3000/resgates'
     const options = {
-        year:"numeric",
         month:"long",
         day:"numeric"
     }
@@ -75,5 +70,6 @@ const carregarSelecionado = async() => {
 
     produtos = await getProdutos(id)
     mostrarProdutos(produtos)
+
 }
 carregarSelecionado()

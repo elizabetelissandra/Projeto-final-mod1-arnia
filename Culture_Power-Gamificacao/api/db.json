@@ -76,6 +76,46 @@
       "imagem": "https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2023/03/15/bd2699709ff9b92ed09de2a756837446.jpg?quality=80&zoom=1&ssl=1",
       "joias": "2",
       "horario": "23 de janeiro de 2024"
+    },
+    {
+      "id": "b385",
+      "produtoId": 2,
+      "nome": "Notebook ABC",
+      "imagem": "../img/Produtos/51ydgHcdC9L._AC_SL1000_.jpg",
+      "joias": "5",
+      "horario": "23 de janeiro de 2024"
+    },
+    {
+      "id": "1b8f",
+      "produtoId": 3,
+      "nome": "Smartphone A31",
+      "imagem": "https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2023/03/15/bd2699709ff9b92ed09de2a756837446.jpg?quality=80&zoom=1&ssl=1",
+      "joias": "2",
+      "horario": "23 de janeiro de 2024"
+    },
+    {
+      "id": "411c",
+      "produtoId": 3,
+      "nome": "Smartphone A31",
+      "imagem": "https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2023/03/15/bd2699709ff9b92ed09de2a756837446.jpg?quality=80&zoom=1&ssl=1",
+      "joias": "2",
+      "horario": "23 de janeiro de 2024"
+    },
+    {
+      "id": "ceb4",
+      "produtoId": 2,
+      "nome": "Notebook ABC",
+      "imagem": "../img/Produtos/51ydgHcdC9L._AC_SL1000_.jpg",
+      "joias": "5",
+      "horario": "23 de janeiro de 2024"
+    },
+    {
+      "id": "7de7",
+      "produtoId": 2,
+      "nome": "Notebook ABC",
+      "imagem": "../img/Produtos/51ydgHcdC9L._AC_SL1000_.jpg",
+      "joias": "5",
+      "horario": "23 de janeiro"
     }
   ]
 }

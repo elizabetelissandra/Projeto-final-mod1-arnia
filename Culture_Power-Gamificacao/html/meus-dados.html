@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/meus-resgates.css">
-    <script src="../js/meus-resgates.js" defer></script>
+    <link rel="stylesheet" href="../css/meus-dados.css">
+    <script src="../js/meus-dados.js" defer></script>
     <title>Meu Perfil</title>
 </head>
 <body>
@@ -26,11 +26,11 @@
             <div id="container">
                 <div class="tab-menu">
                     <div class="tab-buttons">
-                        <img class="icone-perfil-normal" src="../img/icones-perfil/user.png" alt="icone de uma pessoa em formatos geometricos">
-                        <button onclick="meusDados()" type="button" class="tab-btn" content-id='meus-dados'>Meus Dados</button>
+                        <img class="icone-perfil" src="../img/icones-perfil-clicado/user-clicado.png" alt="icone de uma pessoa em formatos geometricos">
+                        <button type="button" class="tab-btn" content-id='meus-dados'>Meus Dados</button>
                     </div>
                     <div class="tab-buttons">
-                        <img class="icone-perfil" src="../img/icones-perfil-clicado/coupon-clicado.png" alt="icone de uma pessoa em formatos geometricos">
+                        <img class="icone-perfil-normal" src="../img/icones-perfil/coupon-2-line.png" alt="icone de uma pessoa em formatos geometricos">
                         <button onclick="meusResgates()" type="button" class="tab-btn" content-id='meus-dados'>Meus resgates</button>
                     </div>
                     <div class="tab-buttons">
@@ -44,8 +44,18 @@
                 </div>
                 <div class="tab-conteudo">
                     <div class="content" id='meus-dados'>
-                        <h2>Meus resgates</h2>
-                        <div class="resgates"></div>
+                        <h2>Meus Dados</h2>
+                        <img src="../img/foto-meusdados.png" alt="imagem da foto de perfil do usuário">
+                        <form>
+                            <div class="input">
+                                <label for="nome">Nome</label><br>
+                                <input type="text" name="nome" id="nome">
+                                </div>
+                            <div class="input">
+                                <label for="email">E-mail</label><br>
+                                <input type="email" name="email" id="email">
+                             </div>
+                        </form>
                     </div>
                 </div>
             </div>
