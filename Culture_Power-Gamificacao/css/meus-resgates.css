@@ -36,5 +36,10 @@
     color:#000000;
     font-size: 18px;
     text-decoration: none;
+}
 
+#container{
+    display: flex;
+    justify-content: space-around;
+    margin: 5em auto;
 }

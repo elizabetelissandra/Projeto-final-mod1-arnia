@@ -16,10 +16,13 @@ const resgatarProduto = async(id) =>{
         }
         await salvarResgate(produto)
     
+
+    
+
     window.location = `../html/produtoResgatado.html?id=${id}`
 }
 
-const salvarResgate = async(produtos) => {
+const salvarResgate = async() => {
     
     const url = 'http://localhost:3000/resgates'
     const options = {
@@ -31,7 +34,7 @@ const salvarResgate = async(produtos) => {
         produtoId: produtos.id,
         nome: produtos.nome,
         imagem: produtos.imagem,
-        pontos: produtos.pontos,
+        joias: produtos.preco,
         horario: new Date().toLocaleDateString('pt-BR', options)
         
     }
