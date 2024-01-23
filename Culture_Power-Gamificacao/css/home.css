@@ -39,7 +39,6 @@
 .usuario img{
     width: 53px;
     height: 50px;
-    border: 2px solid #DCB6F8;
     border-radius: 50%;
 }
 
@@ -207,31 +206,41 @@
 }
 .produtosResgatar{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 2em 0;
+    margin: 2em auto;
+    align-items: flex-end;
     
 }
 .produtosResgatar div{
     display: flex;
     flex-direction: column; 
-    align-items: stretch;
-    width: 16%;
+    justify-content: space-between;
+    height: 50%;
+    max-width: 270px;
+    gap: 0.5em;
     border-radius: 16px;
 }
 .produtosResgatar img{
+    width: 50%;
+    height: 50%;
     max-width: 270px;
+    max-height: 175px;
     margin: 0 auto;
     
 }
 .produtosResgatar h2{
     font-size: 14px;
     text-align: start;
-    margin: 0.5em;
+    margin: 0 auto;
+    width: 75%;
 }
 .produtosResgatar span{
     color: #9E9E9E;
     font-size: 12px;
-    margin: 0.5em;
+    margin: 0 auto;
+    margin: 0 auto;
+    width: 75%;
 }
 .produtos button{
     background-color: #502B6B;

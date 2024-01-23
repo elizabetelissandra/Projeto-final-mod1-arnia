@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Sora:wght@100..800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -17,9 +19,8 @@
     gap: 1em;
 }
 .usuario img{
-    width: 53px;
+    width: 50px;
     height: 50px;
-    border: 2px solid #DCB6F8;
     border-radius: 50%;
 }
 
@@ -40,16 +41,70 @@
 .produtoresgatado{
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 7em;
+    gap: 3em;
 }
 
 .imagem-groot img{
-    width: 60%;
+    width: 85%;
     margin: 0 auto;
 }
 
 .informacoes-produto{
     display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 50%;
+    gap: 2em;
+}
+.resgatado{
+    font-weight: 700;
+    font-size: 24px;
+}
+.conteudo-produto{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.nome-produto{
+    font-size: 16px;
+    margin-bottom: 1.5em;
 }
 .imagem-produto{
     width: 100px;
+    border: 1px solid #F5F4F9;
+    border-radius:16px;
+}
+.texto-retirada{
+    color: #757575;
+    font-size: 18px;
+    margin: 1em 0;
+}
+
+.saldo-total{
+    border: 1px solid #E0E0E0;
+    padding: 0.5em 1em;
+    color: #502B6B;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.saldo-total span{
+    color: black;
+    font-size: 16px;
+}
+
+.voltarInicial{
+    border: 2px solid #502B6B;
+    color: #502B6B;
+    background-color: white;
+    border-radius: 16px;
+    padding: 12px 64px;
+    width: 270px;
+    height: 72px;
+    font-weight: 700;
+    font-size: 18px;
 }
