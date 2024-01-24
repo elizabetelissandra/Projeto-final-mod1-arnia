@@ -9,7 +9,6 @@ const mostrarDados = (produtos) => {
         const id = produto.id
         const nome = produto.nome
         const preco = produto.preco
-        const descricao = produto.descricao
         const imagem = produto.imagem
 
         divProdutos.innerHTML += 

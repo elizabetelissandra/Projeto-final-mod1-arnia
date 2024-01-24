@@ -47,13 +47,20 @@
       "horario": "23 de janeiro"
     }
   ],
-  "usuarios":[
+  "usuarios": [
     {
-      "id":"1",
-      "login":"admin",
-      "senha":"admin",
-      "nome":"Ana Ester",
-      "email":"contato@lojamodelo.com.br"
+      "id": "1",
+      "login": "admin",
+      "senha": "admin",
+      "nome": "Ana Ester",
+      "email": "contato@lojamodelo.com.br"
+    },
+    {
+      "id": "2",
+      "login": "cliente",
+      "senha": "123456",
+      "nome": "José da Silva",
+      "email": "jose@lojamodelo.com.br"
     }
   ]
 }
