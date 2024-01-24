@@ -31,91 +31,29 @@
   ],
   "resgates": [
     {
-      "id": "5427",
-      "produtoId": 1,
-      "nome": "Teclado Mecánico Redragon Mitra",
-      "imagem": "https://static.wixstatic.com/media/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg/v1/fill/w_784,h_784,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg",
-      "horario": "23 de janeiro de 2024"
-    },
-    {
-      "id": "4cd3",
-      "produtoId": 3,
-      "nome": "Smartphone A31",
-      "imagem": "https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2023/03/15/bd2699709ff9b92ed09de2a756837446.jpg?quality=80&zoom=1&ssl=1",
-      "horario": "23 de janeiro de 2024"
-    },
-    {
-      "id": "128d",
-      "produtoId": "2",
-      "horario": "23 de janeiro de 2024"
-    },
-    {
-      "id": "96f0",
-      "produtoId": "3",
-      "horario": "23 de janeiro de 2024"
-    },
-    {
-      "id": "2489",
-      "produtoId": 1,
-      "nome": "Teclado Mecánico Redragon Mitra",
-      "imagem": "https://static.wixstatic.com/media/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg/v1/fill/w_784,h_784,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg",
-      "horario": "23 de janeiro de 2024"
-    },
-    {
-      "id": "286d",
-      "produtoId": 4,
-      "nome": "Mouse Pad Gamer Iluminado led Rgb Grande 80 cm por 30 com",
-      "imagem": "../img/produtos/81lHWGeWtGL._AC_SL1500_.jpg",
-      "pontos": "2",
-      "horario": "23 de janeiro de 2024"
-    },
-    {
-      "id": "4773",
-      "produtoId": 3,
-      "nome": "Smartphone A31",
-      "imagem": "https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2023/03/15/bd2699709ff9b92ed09de2a756837446.jpg?quality=80&zoom=1&ssl=1",
-      "joias": "2",
-      "horario": "23 de janeiro de 2024"
-    },
-    {
-      "id": "b385",
-      "produtoId": 2,
-      "nome": "Notebook ABC",
-      "imagem": "../img/Produtos/51ydgHcdC9L._AC_SL1000_.jpg",
-      "joias": "5",
-      "horario": "23 de janeiro de 2024"
-    },
-    {
-      "id": "1b8f",
-      "produtoId": 3,
-      "nome": "Smartphone A31",
-      "imagem": "https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2023/03/15/bd2699709ff9b92ed09de2a756837446.jpg?quality=80&zoom=1&ssl=1",
-      "joias": "2",
-      "horario": "23 de janeiro de 2024"
-    },
-    {
-      "id": "411c",
-      "produtoId": 3,
-      "nome": "Smartphone A31",
-      "imagem": "https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2023/03/15/bd2699709ff9b92ed09de2a756837446.jpg?quality=80&zoom=1&ssl=1",
-      "joias": "2",
-      "horario": "23 de janeiro de 2024"
-    },
-    {
-      "id": "ceb4",
-      "produtoId": 2,
-      "nome": "Notebook ABC",
-      "imagem": "../img/Produtos/51ydgHcdC9L._AC_SL1000_.jpg",
-      "joias": "5",
-      "horario": "23 de janeiro de 2024"
-    },
-    {
       "id": "7de7",
       "produtoId": 2,
       "nome": "Notebook ABC",
       "imagem": "../img/Produtos/51ydgHcdC9L._AC_SL1000_.jpg",
       "joias": "5",
       "horario": "23 de janeiro"
+    },
+    {
+      "id": "3837",
+      "produtoId": 3,
+      "nome": "Smartphone A31",
+      "imagem": "https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2023/03/15/bd2699709ff9b92ed09de2a756837446.jpg?quality=80&zoom=1&ssl=1",
+      "joias": "2",
+      "horario": "23 de janeiro"
+    }
+  ],
+  "usuarios":[
+    {
+      "id":"1",
+      "login":"admin",
+      "senha":"admin",
+      "nome":"Ana Ester",
+      "email":"contato@lojamodelo.com.br"
     }
   ]
 }

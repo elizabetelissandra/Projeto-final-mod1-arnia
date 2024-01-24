@@ -20,11 +20,15 @@ const mostrarResgates = (dadosApi) => {
         const preco = resgatados.joias
 
        resgate.innerHTML += `
-       <div>
-       <span>${data}</span>
-       <img src='${imagem}'>
-       <h3>${nome}</h3>
-       <span>${preco} jóias</span>
+       <div class="card">
+            <div class='data'>
+                <span>${data}</span>
+            </div>
+            <div class='informacoes'>
+                <img src='${imagem}'>
+                <h3>${nome}</h3>
+                <span>${preco} jóias</span>
+            </div>
        </div>
        `
     });

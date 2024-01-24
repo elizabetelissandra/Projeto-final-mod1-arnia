@@ -42,7 +42,7 @@
 #container{
     display: flex;
     justify-content: space-around;
-    margin: 5em auto;    
+    margin: 3em auto;    
 }
 .tab-buttons{
     display: flex;
@@ -78,19 +78,12 @@
 }
 .tab-conteudo{
     display: flex;
+    align-items: center;
     box-shadow: 0px 7px 30px 0px #BBC0CD66;
-    width: 50%;
-    height: 50%;
     max-width: 670px;
     max-height: 750px;
     padding: 5em;
     border-radius: 48px;
-}
-.content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    
 }
 .joias{
     display: flex;
