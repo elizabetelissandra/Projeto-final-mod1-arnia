@@ -19,6 +19,15 @@ const filtrarProdutos = (produtos) =>{
     })
 }    
 
+const input = document.getElementById('buscar')
+input.addEventListener("keyup", function(e) {
+    const texto = input.value
+    if(texto === ''){
+        filtrar()
+    }else if (e.key === 'Enter'){
+        filtrar(texto)
+    }
+})
 
 
 const filtrar = () => {
@@ -32,7 +41,6 @@ const filtrar = () => {
     let count = 0;
     let span
 
-    
 
     //percorrer as li's
     for(let i = 0; i< li.length; i++){

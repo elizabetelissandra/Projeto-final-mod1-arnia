@@ -119,6 +119,8 @@
     border-radius: 5px;
     box-shadow: 0px 7px 30px 0px #BBC0CD66;
     margin: 0 auto;
+    position: relative;
+    bottom: 40px;
 }
 
 .barra-pesquisa img{
@@ -134,7 +136,8 @@
 
 .barra-pesquisa input::-webkit-input-placeholder {  
     color:#9E9E9E;
-    font-size: 18px;  
+    font-size: 18px; 
+    
  }
 
 .listaProdutos{
@@ -143,6 +146,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    position: relative;
+    bottom: 40px;
 }
 .listaProdutos img{
     max-width: 50px;
@@ -161,6 +166,7 @@
     padding: 1em;
     border: 1px solid #ccc;
     z-index: 2;
+    
 }
 .listaProdutos li a:hover{
     background-color: #cdcaca;
@@ -220,6 +226,8 @@
  .imagens-decorativas{
     display: flex;
     align-items: end;
+    padding-right: 5em;
+    margin: 0 auto;
  }
  .imagens-decorativas img:first-child{
     z-index: 1;
