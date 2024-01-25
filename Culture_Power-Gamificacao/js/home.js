@@ -19,7 +19,9 @@ const filtrarProdutos = (produtos) =>{
     })
 }    
 
-const filtrar = () =>{
+
+
+const filtrar = () => {
     //pegar elementos do html
     let ul = document.querySelector('.listaProdutos')
     //pegar as li do objeto
@@ -29,6 +31,9 @@ const filtrar = () =>{
     const busca = document.getElementById("buscar").value.toUpperCase();
     let count = 0;
     let span
+
+    
+
     //percorrer as li's
     for(let i = 0; i< li.length; i++){
         let a = li[i].getElementsByTagName('a')[0];
@@ -45,6 +50,7 @@ const filtrar = () =>{
             if(span){
                 span.innerHTML = txtValue.replace(new RegExp(busca, 'gi'),(match)=>{
                     return '<strong>' + match + '</strong>'
+
                 })
             }
             }else{
