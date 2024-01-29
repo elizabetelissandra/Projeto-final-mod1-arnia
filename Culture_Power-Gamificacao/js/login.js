@@ -1,32 +1,34 @@
 const formulario = document.getElementById("formulario");
 
 formulario.addEventListener("submit", async event => {
-  event.preventDefault();
+    event.preventDefault();
 
-  let email = document.querySelector("#email").value;
-  let senha = document.querySelector("#senha").value;
+    let email = document.querySelector("#email").value;
+    let senha = document.querySelector("#senha").value;
 
-  const validacao = await verificarDados(email, senha);
+    const usuarioValido = await verificarCredenciaisUsuario(email, senha);
 
-  if (validacao) {
-    alert("Login efetuado. Redirecionando para a página principal.");
-    window.location = '../html/home.html'
-  } else {
-    alert("Erro no login! Tente novamente.");
-  }
+    if(usuarioValido.length > 0){
+        window.location = `../html/home.html?id=${usuarioValido[0].id}`
+    }else{
+        alert('E-mail ou Senha inválidos!')
+    }
+   
 });
 
-const verificarDados = async (email, senha) => {
-  const dados = await fetch("http://localhost:3000/usuarios");
-  console.log(dados);
-  const dadosUsuario = await dados.json();
-  console.log(dadosUsuario);
+const verificarCredenciaisUsuario = async (email, senha) => {
+    const url = 'http://localhost:3000/usuarios';
 
-  for (const login of dadosUsuario) {
-    
-    if (login.email === email && login.senha === senha) {
-      return true;
+    const respostaUsuarios = await fetch(url);
+    const usuarios = await respostaUsuarios.json();
+    const user = []
+
+    for (const usuario of usuarios) {
+        if (usuario.email === email && usuario.senha === senha) {
+            user.push(usuario)
+        }
     }
-  };
-    return false;
+    return user    
 };
+
+

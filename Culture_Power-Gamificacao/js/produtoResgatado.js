@@ -2,6 +2,7 @@ const conteudoResgatado = document.querySelector('.produtoresgatado')
 
 let id = null
 let dados = null
+let userId = null
 
 const getProdutos = async(id) => {
     let resposta = await fetch(`http://localhost:3000/produtos?id=
@@ -11,7 +12,7 @@ const getProdutos = async(id) => {
 }
 
 const voltarPágina = () =>{
-    window.location = `../html/home.html`
+    window.location = `../html/home.html?id=${userId}`
 }
 
 const mostrarProdutos = (produtos) => {
@@ -43,14 +44,26 @@ const mostrarProdutos = (produtos) => {
     </div>
     `
 }
+const mostrarUsuario = async(userId) =>{
+    const usuario = await(await fetch(`http://localhost:3000/usuarios/${userId}`)).json()
+    const bloco = document.querySelector('.usuario')
+    
+    
+    bloco.innerHTML = `
+    <img src="${usuario.imagem}" alt="">
+    <span class="usuario-nome">Olá, <b>${usuario.nome}</b></span>
+    `  
+} 
+
 
 const carregarSelecionado = async() => {
-    const parametros = window.location.search
-    console.log(parametros)
-    const objetoParametros = new URLSearchParams(parametros)
+    const objetoParametros = new URLSearchParams(window.location.search)
     console.log(objetoParametros)
     id = objetoParametros.get('id')
     console.log(id)
+
+    userId = objetoParametros.get("userId");  
+    mostrarUsuario(userId)
 
     const produtos = await getProdutos(id)
     mostrarProdutos(produtos)

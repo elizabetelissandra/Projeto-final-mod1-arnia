@@ -1,74 +1,72 @@
 {
   "produtos": [
     {
-      "id": 1,
-      "nome": "Teclado Mecánico Redragon Mitra",
-      "preco": "5",
       "descricao": "Teclado Gamer Redragon Mecânico Mitra K551 Anti-Ghost RGB Switch Outemu Blue, ABNT 2",
-      "imagem": "https://static.wixstatic.com/media/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg/v1/fill/w_784,h_784,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg"
+      "id": 1,
+      "imagem": "https://static.wixstatic.com/media/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg/v1/fill/w_784,h_784,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg",
+      "nome": "Teclado Mecánico Redragon Mitra",
+      "preco": "5"
     },
     {
-      "id": 2,
-      "nome": "Notebook ABC",
-      "preco": "5",
       "descricao": "Um notebook potente com processador quad-core, SSD rápido e tela Full HD.",
-      "imagem": "../img/Produtos/51ydgHcdC9L._AC_SL1000_.jpg"
+      "id": 2,
+      "imagem": "../img/Produtos/51ydgHcdC9L._AC_SL1000_.jpg",
+      "nome": "Notebook ABC",
+      "preco": "5"
     },
     {
-      "id": 3,
-      "nome": "Smartphone A31",
-      "preco": "2",
       "descricao": "Um smartphone avançado com câmera de alta resolução e processador rápido.",
-      "imagem": "https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2023/03/15/bd2699709ff9b92ed09de2a756837446.jpg?quality=80&zoom=1&ssl=1"
+      "id": 3,
+      "imagem": "https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2023/03/15/bd2699709ff9b92ed09de2a756837446.jpg?quality=80&zoom=1&ssl=1",
+      "nome": "Smartphone A31",
+      "preco": "2"
     },
     {
-      "id": 4,
-      "nome": "Mouse Pad Gamer Iluminado led Rgb Grande 80 cm por 30 com",
-      "preco": "2",
       "descricao": "É tão fácil deslizar o mouse. Com o seu mousepad você poderá preencher a tela do seu computador com cliques. Sua superfície elaborada dará precisão e conforto aos seus movimentos.",
-      "imagem": "../img/produtos/81lHWGeWtGL._AC_SL1500_.jpg"
+      "id": 4,
+      "imagem": "../img/produtos/81lHWGeWtGL._AC_SL1500_.jpg",
+      "nome": "Mouse Pad Gamer Iluminado led Rgb Grande 80 cm por 30 com",
+      "preco": "2"
     }
   ],
   "resgates": [
     {
-      "id": "7de7",
-      "produtoId": 2,
-      "nome": "Notebook ABC",
-      "imagem": "../img/Produtos/51ydgHcdC9L._AC_SL1000_.jpg",
-      "joias": "5",
-      "horario": "23 de janeiro"
+      "id": "8137",
+      "Nome": "Smartphone A31",
+      "Imagem": "https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2023/03/15/bd2699709ff9b92ed09de2a756837446.jpg?quality=80&zoom=1&ssl=1",
+      "data": "28 de janeiro"
     },
     {
-      "id": "3837",
-      "produtoId": 3,
-      "nome": "Smartphone A31",
-      "imagem": "https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2023/03/15/bd2699709ff9b92ed09de2a756837446.jpg?quality=80&zoom=1&ssl=1",
-      "joias": "2",
-      "horario": "23 de janeiro"
-    },
-    {
-      "id": "1890",
-      "produtoId": 1,
-      "nome": "Teclado Mecánico Redragon Mitra",
-      "imagem": "https://static.wixstatic.com/media/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg/v1/fill/w_784,h_784,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg",
-      "joias": "5",
-      "horario": "25 de janeiro"
+      "id": "2ec7",
+      "Nome": "Smartphone A31",
+      "Imagem": "https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2023/03/15/bd2699709ff9b92ed09de2a756837446.jpg?quality=80&zoom=1&ssl=1",
+      "data": "28 de janeiro"
     }
   ],
   "usuarios": [
     {
-      "id": "1",
+      "email": "contato@lojamodelo.com.br",
+      "id": "ef1",
+      "imagem": "https://img.freepik.com/fotos-premium/belo-perfil-feminino-mulher-bonita-com-um-penteado-fofo-com-flores-em-fundo-colorido-generative-ai_58409-30260.jpg",
+      "joias": "10",
       "login": "admin",
-      "senha": "admin",
       "nome": "Ana Ester",
-      "email": "contato@lojamodelo.com.br"
+      "resgates": [
+        {}
+      ],
+      "senha": "admin"
     },
     {
-      "id": "2",
-      "login": "cliente",
-      "senha": "123456",
-      "nome": "José da Silva",
-      "email": "jose@lojamodelo.com.br"
+      "email": "joseb@lojamodelo.com.br",
+      "id": "as2",
+      "imagem": "https://upload.wikimedia.org/wikipedia/commons/4/43/Foto_Perfil.jpg",
+      "joias": "20",
+      "login": "donoa1",
+      "nome": "José Bezerra",
+      "resgates": [
+        {}
+      ],
+      "senha": "123456"
     }
   ]
 }

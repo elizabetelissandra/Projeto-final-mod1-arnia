@@ -78,6 +78,8 @@
 }
 .tab-conteudo{
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     box-shadow: 0px 7px 30px 0px #BBC0CD66;
     width: 494px;
     height: 556px;
@@ -92,11 +94,17 @@
     padding: 3em;
 }
 
-#meus-dados img{
-    max-width: 500px;
-    width: 30%;
+#foto-perfil{
+    max-width: 600px;
+    width: 50%;
+    border-radius: 50%;
+    margin-top: 0.5em;
 }
-
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
 .input{
     border: 1px solid #EEEEEE;
     box-shadow: 0px 3px 5px 0px #AFB2BB33;
@@ -105,7 +113,7 @@
     max-width: 80%;
     max-height: 72px;
     padding: 0.5em 2em 0.5em 0.5em;
-    margin: 1em 0;
+    margin: 0.5em 0;
 
 }
 label{
