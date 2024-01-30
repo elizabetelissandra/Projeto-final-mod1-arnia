@@ -290,3 +290,110 @@
     width: 80%;
     margin: 0 auto;
 }
+@media screen and (max-width: 400px){
+    .topo {
+        width: 100vw;
+        height: 50vh;
+    }
+    .navbar{
+        display: flex;
+        padding: 2em 1em;
+        justify-content: space-between;
+    }
+    .usuario {
+        display: flex;
+    }
+    .usuario img{
+        width: 32px;
+        height: 32px;
+    }
+    .usuario-nome{
+        font-size: 16px;
+    }
+    .linksNavbar{
+        display: none;       
+    }
+    .saldo_home h2{
+        font-size: 14px;
+    }
+    .saldo_home h3{
+        font-size: 40px;
+    }
+    .saldo_home h4{
+        font-size: 12px;
+    }
+    .pedras_home img{
+        width: 8%;
+        height: 10%;
+    }
+    .pedras_home img:first-child, img:last-child{
+        width: 6%;
+    }
+    .lembretes_home span:first-child{
+        font-size: 13px;
+    }
+    .lembretes_home span:last-child{
+        font-size: 12px;
+    }
+    .barra-pesquisa{
+        width: 330px;
+        height: 54px;
+    }
+    .barra-pesquisa img{
+        padding-left: 15px;
+        width: 25px;
+    }
+    #buscar::-webkit-input-placeholder{
+        font-size: 12px;
+    }
+    .banner-avaliacao{
+        width: 90vw;
+        height: 128px;
+        display: flex;
+        
+    }
+    .datas-informacoes{
+        display: flex;
+        width: 10em;
+        gap: 0.5em;
+    }
+    .datas-informacoes h4{
+        font-size: 10px;
+    }
+    .datas-informacoes h3{
+        font-size: 14px;
+        width: 8em;
+    }
+    .datas-info img{
+        width: 16px;
+        height: 16px;
+    }
+    .datas-info h5{
+        font-size: 10px;
+    }
+    .imagens-decorativas{
+        width: 13em;
+    }
+    .imagens-decorativas img{
+        max-width: 171px;
+    }
+    .imagens-decorativas img:last-child{
+        width: 52px;
+        height: 104px;
+    }
+    .produtos{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 96vw;
+    }
+    .produtos h2{
+        margin: 0 auto;
+    }
+    .produtosResgatar{
+        display: block;
+        margin: 2em auto;
+    }.produtosResgatar div{
+        margin-bottom: 2em;
+    }
+}

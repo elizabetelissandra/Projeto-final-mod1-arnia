@@ -27,3 +27,44 @@ body{
     border-radius: 16px;
     font-size: 25px;
 }
+
+
+@media (max-width: 820px) {
+    body{
+        display: flex;
+        align-items: center;
+        margin: 50% auto;
+        background-position: 50%;
+        background-repeat: initial;
+        
+    }
+    .divAbertura{
+        display: flex;
+        justify-content: space-between;
+        height: 100vh;
+        
+        
+    }
+    .divAbertura img{
+        width: 60%;
+        position: relative;
+        top: 40%;
+        animation: zoomIn 2.5s ease 0s 1 normal forwards;
+    }
+    @keyframes zoomIn {
+        0% {
+            transform: scale(0.5);
+        }
+    
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .divAbertura button{
+        width: 90%;
+        background-color: #502B6B;
+        font-size: 18px;
+        color: white;
+    }
+}

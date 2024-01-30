@@ -97,6 +97,7 @@
 #foto-perfil{
     max-width: 600px;
     width: 50%;
+    border: 10px solid #502B6B;
     border-radius: 50%;
     margin-top: 0.5em;
 }

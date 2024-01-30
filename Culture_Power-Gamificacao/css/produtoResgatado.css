@@ -42,7 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 7em;
+    margin: 2em auto;
     gap: 3em;
 }
 

@@ -1,91 +1,131 @@
-const divProdutosSelecionados = document.querySelector('.produtoSelecionado')
-let id = null
-let dados = null
-let userId = null
+class Usuario {
+  constructor(email, id, imagem, joias, login, nome, resgates, senha) {
+    this.email = email;
+    this.id = id;
+    this.imagem = imagem;
+    this.nome = nome;
+    this.joias = joias;
+    this.login = login;
+    this.resgates = resgates;
+    this.senha = senha;
+  }
+}
+class Produto {
+  constructor(descricao, id, imagem, nome, preco, data) {
+    this.descricao = descricao;
+    this.id = id;
+    this.imagem = imagem;
+    this.nome = nome;
+    this.preco = preco;
+    this.data = data;
+  }
+}
 
+let id = null;
+let userId = null;
+let produto = null;
 
 const meusDados = () => {
-    window.location = `../html/meus-dados.html?id=${id}&userId=${userId}`
-  }
-  const home = ()  => {
-    window.location = `../html/home.html?id=${id}&userId=${userId}`
-  }
-  const resgatarProduto = async(id,userId) => {
-    window.location = `../html/produtoResgatado.html?id=${id}&userId=${userId}`;
-}
+  window.location = `../html/meus-dados.html?id=${id}&userId=${userId}`;
+};
+const home = () => {
+  window.location = `../html/home.html?id=${id}&userId=${userId}`;
+};
+const resgatarProduto = async (id, userId) => {
+  salvarResgate(userId, produto);
+  window.location = `../html/produtoResgatado.html?id=${id}&userId=${userId}`;
+};
 
-const getProdutos = async(id) => {
-    let resposta = await fetch(`http://localhost:3000/produtos?id=
-    ${id}`)  //Busca o produto com base no ID passado como parâmetro na URL
-    dados = await resposta.json()   //Transforma a resposta
-    return dados[0]      //Retorna apenas um único produto, pois estamos buscando por ID e não por array de produtos
-}
-const salvarResgate = async(userId) => {
-    
-    const resgates = `http://localhost:3000/usuarios/${userId}`
-    const options = {
-        month: "long",
-        day: "numeric"
-    };
+const salvarResgate = async (userId, produto) => {
+  const options = {
+    month: "long",
+    day: "numeric"
+  };
+  const data = new Date().toLocaleDateString("pt-BR", options);
+  const usuario = await (await fetch(
+    `http://localhost:3000/usuarios/${userId}`
+  )).json();
 
-    const data = {
-        Nome: produtoId.nome,
-        Imagem: produtoId.imagem,
-        Joias: produtoId.joias,
-        data: new Date().toLocaleDateString('pt-BR', options)
-    };
+  let resgates = usuario.resgates;
 
-        await fetch(resgates, {
-        method: 'POST',
-        headers: {
-            "Accept": 'application/json, text/plain, */*',
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-    });
-}
+  const produt = new Produto(
+    produto.descricao,
+    produto.id,
+    produto.imagem,
+    produto.nome,
+    produto.preco,
+    data
+  );
+  resgates.push(produt);
 
-const mostrarProdutos = (produtos, userId) => {
-    divProdutosSelecionados.innerHTML +=
-    `
+  const user = new Usuario(
+    usuario.email,
+    usuario.id,
+    usuario.imagem,
+    `${parseInt(usuario.joias) - parseInt(produto.preco)}`,
+    usuario.login,
+    usuario.nome,
+    resgates,
+    usuario.senha
+  );
+
+  const resposta = await fetch(`http://localhost:3000/usuarios/${userId}`, {
+    method: "PUT",
+    headers: {
+      Accept: "application/json, text/plain, */*",
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(user)
+  });
+};
+const mostrarProdutos = async(userId) => {
+
+  let dados = await fetch(
+    `http://localhost:3000/produtos?id=${id}`
+  )
+  produto = await dados.json();
+  const divProdutosSelecionados = document.querySelector(".produtoSelecionado");
+  console.log(produto);
+  console.log(userId)
+  
+  divProdutosSelecionados.innerHTML = `
     <div>
-        <img src="${produtos.imagem}" alt="">
+        <img src="${produto[0].imagem}" alt="">
     </div>
     <div>
-        <h2 class='nome-produto'>${produtos.nome}</h2>
-        <span> Por: <b>${produtos.preco}</b> <i class="fa-regular fa-gem"></i></span>
-        <p>${produtos.descricao}</p>
-        <button class='resgatar' onclick="resgatarProduto('${produtos.id}','${userId}')"> Resgatar</button>
+        <h2 class='nome-produto'>${produto[0].nome}</h2>
+        <span> Por: <b>${produto[0].preco}</b> <i class="fa-regular fa-gem"></i></span>
+        <p>${produto[0].descricao}</p>
+        <button class='resgatar' onclick="resgatarProduto('${id}','${userId}')"> Resgatar</button>
     </div>
-    `
-}
+    `;
+};
 
-const mostrarUsuario = async(userId) =>{
-    const usuario = await(await fetch(`http://localhost:3000/usuarios/${userId}`)).json()
-    const bloco = document.querySelector('.usuario')
-    
-    
-    bloco.innerHTML = `
+const mostrarUsuario = async userId => {
+  const usuario = await (await fetch(
+    `http://localhost:3000/usuarios/${userId}`
+  )).json();
+  const bloco = document.querySelector(".usuario");
+  const itensNav = document.querySelector('.linksNavbar')
+
+  bloco.innerHTML = `
     <img src="${usuario.imagem}" alt="">
     <span class="usuario-nome">Olá, <b>${usuario.nome}</b></span>
-    `
-  
-  } 
+    `;
+    
+    itensNav.innerHTML = `
+    <a href="#" onclick='voltarPagina('${userId}')>Home</a>
+    <a href="#">Produtos</a>
+    <a href="#" onclick="meusDados('${id}','${userId}')">Meu Perfil</a>`
+};
 
-const carregarSelecionado = async() => {
-    const objetoParametros = new URLSearchParams(window.location.search)
-    console.log(objetoParametros)
-    id = objetoParametros.get('id')
-    console.log(id)
+const carregarSelecionado = async () => {
+  const objetoParametros = new URLSearchParams(window.location.search);
+  id = objetoParametros.get("id");
 
-    userId = objetoParametros.get("userId");  
-    mostrarUsuario(userId)
-   
+  userId = objetoParametros.get("userId");
+  mostrarUsuario(userId);
 
-    dados = await(await fetch("http://localhost:3000/produtos")).json();
-    console.log(dados);
-
-    produtoId = await getProdutos(id)
-    mostrarProdutos(produtoId, userId)
-}
-carregarSelecionado()
+  mostrarProdutos(userId);
+};
+carregarSelecionado();

@@ -1,8 +1,8 @@
 let id = null
 let userId = null
 
-const resgatarProduto = () => {
-  window.location.href = `../html/produto.html?id=${id}&userId=${userId}`;
+const resgatarProduto = (id) => {
+  window.location = `../html/produto.html?id=${id}&userId=${userId}`;
 };
 
 const meusDados = () => {
@@ -13,7 +13,7 @@ const home = ()  => {
   window.location = `../html/home.html?id=${id}&userId=${userId}`
 }
 
-const mostrarDados = (produtos, userId) => {
+const mostrarDados = (produtos) => {
   const divProdutos = document.querySelector(".produtosResgatar");
 
   produtos.forEach(produto => {
@@ -26,7 +26,7 @@ const mostrarDados = (produtos, userId) => {
                 <img src="${imagem}">
                 <h2>${nome}</h2>
                 <span>${preco} jóias</span>
-                <button class="resgatar" onclick="resgatarProduto()">Resgatar</button>
+                <button class="resgatar" onclick="resgatarProduto('${id}')">Resgatar</button>
             </div> `;
   });
 };
@@ -49,10 +49,9 @@ const mostrarUsuario = async(userId) =>{
 
 const carregarDados = async () => {
   const parametros = new URLSearchParams(window.location.search);
-   userId = parametros.get("id");
+   userId = parametros.get("userId");
+   id = parametros.get('id')
    
-  
-
   mostrarUsuario(userId)
 
   const dados = await fetch("http://localhost:3000/produtos");
@@ -60,7 +59,7 @@ const carregarDados = async () => {
   const produtos = await dados.json();
   console.log(produtos);
   
-  mostrarDados(produtos, userId);
+  mostrarDados(produtos);
   // filtrarProdutos(produtos);
 };
 carregarDados();

@@ -9,7 +9,7 @@ formulario.addEventListener("submit", async event => {
     const usuarioValido = await verificarCredenciaisUsuario(email, senha);
 
     if(usuarioValido.length > 0){
-        window.location = `../html/home.html?id=${usuarioValido[0].id}`
+        window.location = `../html/home.html?userId=${usuarioValido[0].id}`
     }else{
         alert('E-mail ou Senha inválidos!')
     }
@@ -19,8 +19,7 @@ formulario.addEventListener("submit", async event => {
 const verificarCredenciaisUsuario = async (email, senha) => {
     const url = 'http://localhost:3000/usuarios';
 
-    const respostaUsuarios = await fetch(url);
-    const usuarios = await respostaUsuarios.json();
+    const usuarios = await(await fetch(url)).json();
     const user = []
 
     for (const usuario of usuarios) {
