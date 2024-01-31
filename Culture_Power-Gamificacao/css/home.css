@@ -289,9 +289,11 @@
     margin: 0 auto;
 }
 @media screen and (max-width: 400px){
-    .topo {
+    body{
         width: 100vw;
-        height: 50vh;
+    }
+    .topo {
+        height: 20%;
     }
     .navbar{
         display: flex;
@@ -336,6 +338,8 @@
     .barra-pesquisa{
         width: 330px;
         height: 54px;
+        position: relative;
+        top: 2em;
     }
     .barra-pesquisa img{
         padding-left: 15px;
@@ -345,15 +349,18 @@
         font-size: 12px;
     }
     .banner-avaliacao{
-        width: 90vw;
+        width: 99%;
         height: 128px;
         display: flex;
+        margin: 3em 0;
         
     }
     .datas-informacoes{
         display: flex;
         width: 10em;
         gap: 0.5em;
+        padding: 0;
+        margin: 0;
     }
     .datas-informacoes h4{
         font-size: 10px;
@@ -370,29 +377,46 @@
         font-size: 10px;
     }
     .imagens-decorativas{
-        width: 13em;
+        max-width: 500px;
+        width: 45%;
+        margin: 0;
     }
-    .imagens-decorativas img{
-        max-width: 171px;
+    .imagens-decorativas img:first-child{
+        width: 150px;
     }
     .imagens-decorativas img:last-child{
-        width: 52px;
-        height: 104px;
+        width: 75px;
     }
     .produtos{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        width: 96vw;
+        width: 96%;
     }
     .produtos h2{
-        margin: 0 auto;
+        font-size: 16px;
+        text-align: left;
     }
     .produtosResgatar{
         display: block;
         margin: 2em auto;
         
     }.produtosResgatar div{
-        margin-bottom: 2em;
+        width: 70%;
+        margin: 1em auto;
+        border: 1px solid  #bdbdbd;
+        padding: 1em;
+    }
+    .produtosResgatar div>h2{
+        font-size: 12px;
+    }
+    .produtosResgatar div>span{
+        font-size: 10px;
+    }
+    .produtosResgatar div>button:focus{
+        background-color: #AD8AC6;
+    }
+    .produtosResgatar div>button:hover{
+        background-color: #AD8AC6;
     }
 }
