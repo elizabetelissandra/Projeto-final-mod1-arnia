@@ -125,3 +125,54 @@
     background: #EEEEEE;
     margin-bottom: 0.5em;
 }
+
+@media screen and (max-width: 480px){
+    .navbar{
+        display: flex;
+        padding: 2em 1em;
+        justify-content: space-around;
+    }
+    .usuario {
+        display: flex;
+        flex-direction: column;
+    }
+    .usuario img{
+        width: 32px;
+        height: 32px;
+    }
+    .usuario-nome{
+        font-size: 16px;
+    }
+    .linksNavbar{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .linksNavbar a {
+        font-size: 12px;
+    }
+    #container{
+        display: block;
+        margin: 0;
+    }
+    .tab-buttons{
+        width: 90%;
+        margin: 0.5em auto;
+    }
+    .resgates{
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+    }
+    .card{
+        border: 2px solid #EEEEEE;
+        display: flex;
+        align-items: center;
+    }
+    .informacoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

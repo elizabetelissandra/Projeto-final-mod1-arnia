@@ -114,5 +114,62 @@
     color: #616161;
     font-size: 24px;
 }
-
+@media screen and (max-width: 480px){
+    .navbar{
+        display: flex;
+        padding: 2em 1em;
+        justify-content: space-around;
+    }
+    .usuario {
+        display: flex;
+        flex-direction: column;
+    }
+    .usuario img{
+        width: 32px;
+        height: 32px;
+    }
+    .usuario-nome{
+        font-size: 16px;
+    }
+    .linksNavbar{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .linksNavbar a {
+        font-size: 12px;
+    }
+    #container{
+        display: block;
+        margin: 0;
+    }
+    .tab-buttons{
+        width: 90%;
+        margin: 0.5em auto;
+    }
+    .tab-conteudo{
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+        padding: 0;
+        padding-bottom: 5em;
+    }
+    .content{
+        padding: 1em;
+        height: 80%;
+    }
+    .content h2{
+        text-align: center;
+        padding-top: 0.5em;
+    }
+    .conteudo-joias h5{
+        font-size: 16px;
+    }
+    .conteudo-joias span{
+        font-size: 10px;
+    }
+    .conteudo-joias p{
+        font-size: 14px;
+    }
+}
 
