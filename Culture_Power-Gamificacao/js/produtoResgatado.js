@@ -13,7 +13,7 @@ const voltarPagina = () =>{
 const mostrarProdutos = async(id, userId) => {
     const resposta = await fetch(`http://localhost:3000/produtos?id=${id}`)
     const produtos = await resposta.json()
-    console.log(produtos)
+    const usuario = await(await fetch(`http://localhost:3000/usuarios/${userId}`)).json()
     const conteudoResgatado = document.querySelector('.produtoresgatado')
     conteudoResgatado.innerHTML +=
     `
@@ -36,7 +36,7 @@ const mostrarProdutos = async(id, userId) => {
             Cidade Digital
             <br><br>
             Estamos ansiosos para recebê-lo e proporcionar uma experiência incrível ao retirar o seu produto. Agradecemos por fazer parte do nosso programa de fidelidade. Qualquer dúvida, entre em contato conosco. Até breve!</p>
-            <span class='saldo-total'><span>Meu saldo:</span> 4 <i class="fa-regular fa-gem"></i></span>
+            <span class='saldo-total'><span>Meu saldo:</span> ${usuario.joias} <i class="fa-regular fa-gem"></i></span>
         </div>
         <button class='voltarInicial' onclick="voltarPagina('${id}', '${userId}')">Voltar à página inicial</button>
     </div>
@@ -61,10 +61,7 @@ const mostrarUsuario = async(id, userId) =>{
 
 const carregarSelecionado = async() => {
     const objetoParametros = new URLSearchParams(window.location.search)
-    console.log(objetoParametros)
     id = objetoParametros.get('id')
-    console.log(id)
-
     userId = objetoParametros.get("userId");  
     mostrarUsuario(id, userId)
 

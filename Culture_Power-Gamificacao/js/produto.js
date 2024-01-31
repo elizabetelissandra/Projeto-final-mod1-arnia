@@ -1,23 +1,23 @@
 class Usuario {
-  constructor(email, id, imagem, joias, login, nome, resgates, senha) {
-    this.email = email;
-    this.id = id;
-    this.imagem = imagem;
-    this.nome = nome;
-    this.joias = joias;
-    this.login = login;
-    this.resgates = resgates;
-    this.senha = senha;
+  constructor(email, id, imagem, nome, joias, login, resgates, senha) {
+    this.email = email
+    this.id = id
+    this.imagem = imagem
+    this.nome = nome
+    this.joias = joias
+    this.login = login
+    this.resgates = resgates
+    this.senha = senha
   }
 }
 class Produto {
   constructor(descricao, id, imagem, nome, preco, data) {
-    this.descricao = descricao;
-    this.id = id;
-    this.imagem = imagem;
-    this.nome = nome;
-    this.preco = preco;
-    this.data = data;
+    this.descricao = descricao
+    this.id = id
+    this.imagem = imagem
+    this.nome = nome
+    this.preco = preco
+    this.data = data
   }
 }
 
@@ -33,7 +33,7 @@ const home = () => {
 };
 const resgatarProduto = async (id, userId) => {
   salvarResgate(userId, produto);
-  window.location = `../html/produtoResgatado.html?id=${id}&userId=${userId}`;
+  
 };
 
 const salvarResgate = async (userId, produto) => {
@@ -41,19 +41,20 @@ const salvarResgate = async (userId, produto) => {
     month: "long",
     day: "numeric"
   };
+
   const data = new Date().toLocaleDateString("pt-BR", options);
   const usuario = await (await fetch(
     `http://localhost:3000/usuarios/${userId}`
   )).json();
-
+  
   let resgates = usuario.resgates;
 
   const produt = new Produto(
-    produto.descricao,
-    produto.id,
-    produto.imagem,
-    produto.nome,
-    produto.preco,
+    produto[0].descricao,
+    produto[0].id,
+    produto[0].imagem,
+    produto[0].nome,
+    produto[0].preco,
     data
   );
   resgates.push(produt);
@@ -62,13 +63,12 @@ const salvarResgate = async (userId, produto) => {
     usuario.email,
     usuario.id,
     usuario.imagem,
-    `${parseInt(usuario.joias) - parseInt(produto.preco)}`,
-    usuario.login,
     usuario.nome,
+    `${parseInt(usuario.joias) - parseInt(produto[0].preco)}`,
+    usuario.login,
     resgates,
     usuario.senha
   );
-
   const resposta = await fetch(`http://localhost:3000/usuarios/${userId}`, {
     method: "PUT",
     headers: {
@@ -77,6 +77,7 @@ const salvarResgate = async (userId, produto) => {
     },
     body: JSON.stringify(user)
   });
+  window.location = `../html/produtoResgatado.html?id=${id}&userId=${userId}`;
 };
 const mostrarProdutos = async(userId) => {
 

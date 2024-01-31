@@ -20,14 +20,11 @@ const voltarPagina = () =>{
 const mostrarResgates = (dadosApi) => {
     const resgate = document.querySelector('.resgates')
     
-
-    
-
-    dadosApi.forEach(resgatados => {
-        const data = resgatados.horario
+    dadosApi.resgates.forEach(resgatados => {
+        const data = resgatados.data
         const imagem = resgatados.imagem
         const nome = resgatados.nome
-        const preco = resgatados.joias
+        const preco = resgatados.preco
 
        resgate.innerHTML += `
        <div class="card">
@@ -69,7 +66,7 @@ const carregarResgates = async() => {
     console.log(userId);
     mostrarUsuario(userId);
     
-    const resposta = await(await fetch(`http://localhost:3000/resgates-${userId}`)).json()
+    const resposta = await(await fetch(`http://localhost:3000/usuarios/${userId}`)).json()
     console.log(resposta)
 
    mostrarResgates(resposta)

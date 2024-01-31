@@ -6,8 +6,6 @@
     font-style: normal;
     src: url(../fonts/Guardians.ttf);
 }
-
-
 *{
     margin: 0;
     padding: 0;
@@ -393,6 +391,7 @@
     .produtosResgatar{
         display: block;
         margin: 2em auto;
+        
     }.produtosResgatar div{
         margin-bottom: 2em;
     }
