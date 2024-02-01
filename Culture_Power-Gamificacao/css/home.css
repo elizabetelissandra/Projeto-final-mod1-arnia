@@ -358,7 +358,7 @@
         width: 99%;
         height: 128px;
         display: flex;
-        margin: 3em 0;
+        margin: 3em auto;
         
     }
     .datas-informacoes{

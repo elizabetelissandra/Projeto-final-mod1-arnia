@@ -35,7 +35,7 @@
       "id": "ef1",
       "imagem": "https://img.freepik.com/fotos-premium/belo-perfil-feminino-mulher-bonita-com-um-penteado-fofo-com-flores-em-fundo-colorido-generative-ai_58409-30260.jpg",
       "nome": "Ana Ester",
-      "joias": "89",
+      "joias": "84",
       "login": "admin",
       "resgates": [
         {
@@ -61,6 +61,14 @@
           "nome": "Teclado Mecánico Redragon Mitra",
           "preco": "5",
           "data": "31 de janeiro"
+        },
+        {
+          "descricao": "Um notebook potente com processador quad-core, SSD rápido e tela Full HD.",
+          "id": "2",
+          "imagem": "../img/Produtos/51ydgHcdC9L._AC_SL1000_.jpg",
+          "nome": "Notebook ABC",
+          "preco": "5",
+          "data": "1 de fevereiro"
         }
       ],
       "senha": "admin"

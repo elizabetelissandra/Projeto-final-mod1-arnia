@@ -150,9 +150,8 @@
     .tab-conteudo{
         display: block;
         width: 95%;
-        margin: 0 auto;
-        padding: 0;
-        padding-bottom: 5em;
+        margin: auto auto 2em auto;
+        padding: 0 0 5em 0;
     }
     .content{
         padding: 1em;
