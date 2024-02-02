@@ -54,19 +54,29 @@ const mostrarDados = (dados, userId) => {
 
 const mostrarUsuario = async(userId) =>{
     const usuario = await(await fetch(`http://localhost:3000/usuarios/${userId}`)).json()
-    const bloco = document.querySelector('.usuario')
-
+    const bloco = document.querySelector(".usuario");
     const itensNav = document.querySelector('.linksNavbar')
-    itensNav.innerHTML = `
-    <a href="#" onclick="voltarPagina('${userId}')">Home</a>
-    <a href="#">Produtos</a>
-    <a href="#" onclick="meusDados('${id}','${userId}')">Meu Perfil</a>`    
-    
-    bloco.innerHTML = `
+    const itensNavMobile = document.querySelector('.linksNavbarMobile')
+
+  bloco.innerHTML = `
     <img src="${usuario.imagem}" alt="">
     <span class="usuario-nome">Olá, <b>${usuario.nome}</b></span>
-    `  
-} 
+    `
+    itensNav.innerHTML = `
+    <a href="#" onclick='voltarPagina('${userId}')>Home</a>
+    <a href="#">Produtos</a>
+    <a href="#" onclick="meusDados('${id}','${userId}')">Meu Perfil</a>`
+
+    itensNavMobile.innerHTML = `
+    <li><a href="#" onclick='voltarPagina('${userId}')>Home</a></li>
+    <li><a href="#">Produtos</a></li>
+    <li><a href="#" onclick="meusDados('${id}','${userId}')">Meu Perfil</a></li>`
+};
+const menuOnClick = () => {
+  document.getElementById("menu-bar").classList.toggle("change");
+  document.getElementById("nav").classList.toggle("change");
+  document.getElementById("menu-bg").classList.toggle("change-bg");
+}
 
 const carregarDados = async () => {
   
