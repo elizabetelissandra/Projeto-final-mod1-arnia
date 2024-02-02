@@ -31,6 +31,9 @@ const meusDados = () => {
 const home = () => {
   window.location = `../html/home.html?id=${id}&userId=${userId}`;
 };
+const voltarPagina = () =>{
+  window.location = `../html/home.html?userId=${userId}`
+}
 const resgatarProduto = async (id, userId) => {
   salvarResgate(userId, produto);
   
@@ -115,12 +118,12 @@ const mostrarUsuario = async userId => {
     <span class="usuario-nome">Olá, <b>${usuario.nome}</b></span>
     `
     itensNav.innerHTML = `
-    <a href="#" onclick='voltarPagina('${userId}')>Home</a>
+    <a href="#" onclick="voltarPagina('${userId}')">Home</a>
     <a href="#">Produtos</a>
     <a href="#" onclick="meusDados('${id}','${userId}')">Meu Perfil</a>`
 
     itensNavMobile.innerHTML = `
-    <li><a href="#" onclick='voltarPagina('${userId}')>Home</a></li>
+    <li><a href="#" onclick="voltarPagina('${userId}')">Home</a></li>
     <li><a href="#">Produtos</a></li>
     <li><a href="#" onclick="meusDados('${id}','${userId}')">Meu Perfil</a></li>`
 };

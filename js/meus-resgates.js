@@ -53,15 +53,16 @@ const mostrarUsuario = async userId => {
     <span class="usuario-nome">Olá, <b>${usuario.nome}</b></span>
     `
     itensNav.innerHTML = `
-    <a href="#" onclick='voltarPagina('${userId}')>Home</a>
+    <a href="#" onclick="voltarPagina('${userId}')">Home</a>
     <a href="#">Produtos</a>
     <a href="#" onclick="meusDados('${id}','${userId}')">Meu Perfil</a>`
 
     itensNavMobile.innerHTML = `
-    <li><a href="#" onclick='voltarPagina('${userId}')>Home</a></li>
+    <li><a href="#" onclick="voltarPagina('${userId}')">Home</a></li>
     <li><a href="#">Produtos</a></li>
     <li><a href="#" onclick="meusDados('${id}','${userId}')">Meu Perfil</a></li>`
 };
+
 const menuOnClick = () => {
   document.getElementById("menu-bar").classList.toggle("change");
   document.getElementById("nav").classList.toggle("change");

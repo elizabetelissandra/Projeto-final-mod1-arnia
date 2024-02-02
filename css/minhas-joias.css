@@ -28,7 +28,9 @@
 .usuario span{
     color: #502B6B;
 }
-
+.linksNavbarMobile{
+    display: none;
+}
 .linksNavbar{
     display: flex;
     gap: 4em;
@@ -42,7 +44,7 @@
 #container{
     display: flex;
     justify-content: space-around;
-    margin: 5em auto;    
+    margin: 3em auto;    
 }
 .tab-buttons{
     display: flex;
@@ -78,54 +80,42 @@
 }
 .tab-conteudo{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: start;
+    align-items: center;
     box-shadow: 0px 7px 30px 0px #BBC0CD66;
     max-width: 670px;
-    max-height: 920px;
-    padding: 3em;
+    max-height: 750px;
+    padding: 5em;
     border-radius: 48px;
 }
-.resgates{
+.joias{
     display: flex;
-    justify-content: flex-start;
     gap: 1em;
+    margin: 1em 0;
 }
-.card{
+.conteudo-joias{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 2em 0;
+    gap: 1em;
 }
-
-.data{
-    font-size: 16px;
-    color: #757575;
+.joias img{
+    max-width: 55px;
+    max-height: 57px;
+    border: 0.9px solid #EEEEEE;
+    border-radius: 14.48px;
 }
-
-
-.informacoes h3{
-    color: #212121;
-    width: 226px;
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 0.5em;
+.joias h5{
+    font-size: 20px;
+    font-weight: 700;
 }
-.informacoes span{
+.joias span{
     color: #9E9E9E;
-    font-size: 12px;
+    font-size: 14px;
 }
 
-.informacoes img{
-    width: 50%;
-    max-width: 270px;
-    border-radius: 16px;
-    border: 1px solid #EEEEEE;
-    background: #EEEEEE;
-    margin-bottom: 0.5em;
+.joias p {
+    color: #616161;
+    font-size: 20px;
 }
-
 @media screen and (max-width: 480px){
     .navbar{
         display: flex;
@@ -261,49 +251,27 @@
         margin: 0.5em auto;
     }
     .tab-conteudo{
-        width: 70%;
-        max-height: max-content;
-        margin: auto auto 2em auto;
-        display: flex;
-        flex-direction: column;
-    }
-    .tab-conteudo h2{
-        padding: 0em auto;
-
-    }
-    #meus-dados{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .resgates{
-        display: flex;
-        flex-wrap: wrap;
-        width: 50%;
-        margin: 2em 0 0 0;
-    }
-    .card{
-        border: 2px solid #EEEEEE;
-        display: flex;
-        width: 10em;
-        height: 5em;
-        align-items: center;
-    }
-    .data span{
-        font-size: 10px;
-    }
-    .informacoes{
-        display: flex;
-        width: 80%;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .informacoes h3{
-        font-size: 12px;
+        display: block;
         width: 95%;
+        margin: auto auto 2em auto;
+        padding: 0 0 5em 0;
     }
-    .informacoes span{
+    .content{
+        padding: 1em;
+        height: 80%;
+    }
+    .content h2{
+        text-align: center;
+        padding-top: 0.5em;
+    }
+    .conteudo-joias h5{
+        font-size: 16px;
+    }
+    .conteudo-joias span{
         font-size: 10px;
+    }
+    .conteudo-joias p{
+        font-size: 14px;
     }
 }
+
