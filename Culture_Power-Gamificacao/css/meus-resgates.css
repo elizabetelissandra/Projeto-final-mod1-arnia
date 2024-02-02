@@ -262,18 +262,19 @@
     }
     .tab-conteudo{
         width: 70%;
+        max-height: max-content;
         margin: auto auto 2em auto;
         display: flex;
-        flex-direction: row;
-        flex-wrap:wrap;
+        flex-direction: column;
     }
     .tab-conteudo h2{
-        padding: 5em auto;
+        padding: 0em auto;
 
     }
     #meus-dados{
         display: flex;
-        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
     .resgates{
         display: flex;
