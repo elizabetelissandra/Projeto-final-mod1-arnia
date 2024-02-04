@@ -10,7 +10,7 @@ const minhasJoias = () => {
 }
 
 const sair = () => {
-    window.location = `../html/abertura.html`
+    window.location = '../index.html'
 }
 
 const voltarPagina = () =>{
@@ -45,8 +45,8 @@ const mostrarUsuario = async userId => {
     const usuario = await (await fetch(`http://localhost:3000/usuarios/${userId}`)).json();
     console.log(userId)
     const bloco = document.querySelector(".usuario");
-  const itensNav = document.querySelector('.linksNavbar')
-  const itensNavMobile = document.querySelector('.linksNavbarMobile')
+    const itensNav = document.querySelector('.linksNavbar')
+    const itensNavMobile = document.querySelector('.linksNavbarMobile')
 
   bloco.innerHTML = `
     <img src="${usuario.imagem}" alt="">

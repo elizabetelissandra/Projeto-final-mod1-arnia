@@ -14,7 +14,7 @@ const minhasJoias = (userId) => {
 };
 
 const sair = () => {
-  window.location = "../html/abertura.html";
+  window.location = '../index.html'
 };
 const voltarPagina = () =>{
   window.location = `../html/home.html?userId=${userId}`

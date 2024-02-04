@@ -14,7 +14,7 @@ const voltarPagina = () =>{
 }
 
 const sair = () => {
-    window.location = '../html/abertura.html'
+    window.location = '../index.html'
 }
 
 const mostrarUsuario = async(userId) =>{

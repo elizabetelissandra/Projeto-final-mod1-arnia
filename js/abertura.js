@@ -1,3 +1,3 @@
 const login = () => {
-    window.location = '../html/login.html'
+    window.location = './html/login.html'
 }

@@ -1,72 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="../js/home.js" defer></script>
-    <link rel="stylesheet" href="../css/home.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <title>Home</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="topo">
-        <nav class="navbar">
-            <div class="usuario">
-                
-            </div>
-            <div id="menu">
-                <div id="menu-bar" onclick="menuOnClick()">
-                  <div id="bar1" class="bar"></div>
-                  <div id="bar2" class="bar"></div>
-                  <div id="bar3" class="bar"></div>
-                </div>
-                <div class="nav" id="nav">
-                <ul class="linksNavbarMobile">
-
-                </ul> 
-                </div>        
-            </div>
-        <div class="menu-bg" id="menu-bg"></div>
-            <div class="linksNavbar">
-                
-            </div>
-            
-        </nav>
-        <div class="saldo_home">
-            
+      <nav class="navbar">
+        <div class="usuario"></div>
+        <div id="menu">
+          <i id='burguer'class="fa-solid fa-bars" onclick="menuOnClick()"></i>
+          <div id="menu-bar">
+            <ul class="linksNavbarMobile"></ul>
+          </div>
         </div>
-        <div class="pedras_home">
-            <img src="../img/Pedras/19.png" alt=""><img src="../img/Pedras/22.png" alt=""><img src="../img/Pedras/21.png" alt=""><img src="../img/Pedras/20.png" alt="">
-        </div>
-        <div class="lembretes_home">
-            <span><i class="fa-regular fa-calendar calendario"></i> 2º Ciclo de Gestão de Desempenho</span><br>
-            <span>Vence em: 06 de julho de 2023</span>
-        </div>
-        <div class="barra-pesquisa">
-            <img src="../img/search.png" alt="lupa">
-            <input id="buscar" type="search" placeholder="O que você está buscando?">
-        </div>
-        <ul class="listaProdutos"></ul>
+        <div class="linksNavbar"></div>
+      </nav>
+      <div class="saldo_home"></div>
+      <div class="pedras_home">
+        <img src="../img/Pedras/19.png" alt="" /><img
+          src="../img/Pedras/22.png"
+          alt=""
+        /><img src="../img/Pedras/21.png" alt="" /><img
+          src="../img/Pedras/20.png"
+          alt=""
+        />
+      </div>
+      <div class="lembretes_home">
+        <span
+          ><i class="fa-regular fa-calendar calendario"></i> 2º Ciclo de Gestão
+          de Desempenho</span
+        ><br />
+        <span>Vence em: 06 de julho de 2023</span>
+      </div>
+      <div class="barra-pesquisa">
+        <img src="../img/search.png" alt="lupa" />
+        <input
+          id="buscar"
+          type="search"
+          placeholder="O que você está buscando?"
+        />
+      </div>
+      <ul class="listaProdutos"></ul>
     </header>
     <main>
-        <section class="banner-avaliacao">
-            <div class="datas-informacoes">
-                <h4>A data está próxima!</h4>
-                <h3>Avaliação de Desempenho</h3>
-                <div class="datas-info">
-                    <img src="../img/calendar.png" alt="vetor de um calendário"><h5>25 de novembro</h5></div>
-                </div>
-            <div class="imagens-decorativas">
-                <img src="../img/image2.png" alt="imagem dos Guardiões da Galáxia">
-                <img src="../img/Modo_de_isolamento.png" alt="varios pontos rosa">
-            </div>
-        </section>
-        <section class="produtos">
-            <h2>Produtos para você</h2>
-            <div class="produtosResgatar"></div>
-        </section>
+      <section class="banner-avaliacao">
+        <div class="datas-informacoes">
+          <h4>A data está próxima!</h4>
+          <h3>Avaliação de Desempenho</h3>
+          <div class="datas-info">
+            <img src="../img/calendar.png" alt="vetor de um calendário" />
+            <h5>25 de novembro</h5>
+          </div>
+        </div>
+        <div class="imagens-decorativas">
+          <img src="../img/image2.png" alt="imagem dos Guardiões da Galáxia" />
+          <img src="../img/Modo_de_isolamento.png" alt="varios pontos rosa" />
+        </div>
+      </section>
+      <section class="produtos">
+        <h2>Produtos para você</h2>
+        <div class="produtosResgatar"></div>
+      </section>
     </main>
-    <script src="https://kit.fontawesome.com/afae51edef.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/afae51edef.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
-

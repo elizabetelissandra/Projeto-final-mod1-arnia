@@ -58,10 +58,14 @@ const mostrarUsuario = async(userId) =>{
     <li><a href="#" onclick="meusDados('${id}','${userId}')">Meu Perfil</a></li>`
 } 
 const menuOnClick = () => {
-  document.getElementById("menu-bar").classList.toggle("change");
-  document.getElementById("nav").classList.toggle("change");
-  document.getElementById("menu-bg").classList.toggle("change-bg");
+  const linkMenu = document.getElementById("menu-bar");
+  if(linkMenu.style.display ==  "block"){
+      linkMenu.style.display = "none";
+      }else{
+        linkMenu.style.display = "block"
 }
+}
+
 
 
 const carregarDados = async () => {
