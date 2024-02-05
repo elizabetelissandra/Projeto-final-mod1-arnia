@@ -35,7 +35,7 @@
       "id": "ef1",
       "imagem": "https://img.freepik.com/fotos-premium/belo-perfil-feminino-mulher-bonita-com-um-penteado-fofo-com-flores-em-fundo-colorido-generative-ai_58409-30260.jpg",
       "nome": "Ana Ester",
-      "joias": "288",
+      "joias": "283",
       "login": "admin",
       "resgates": [
         {
@@ -76,6 +76,14 @@
           "imagem": "https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2023/03/15/bd2699709ff9b92ed09de2a756837446.jpg?quality=80&zoom=1&ssl=1",
           "nome": "Smartphone A31",
           "preco": "2",
+          "data": "5 de fevereiro"
+        },
+        {
+          "descricao": "Teclado Gamer Redragon Mecânico Mitra K551 Anti-Ghost RGB Switch Outemu Blue, ABNT 2",
+          "id": "1",
+          "imagem": "https://static.wixstatic.com/media/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg/v1/fill/w_784,h_784,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg",
+          "nome": "Teclado Mecánico Redragon Mitra",
+          "preco": "5",
           "data": "5 de fevereiro"
         }
       ],

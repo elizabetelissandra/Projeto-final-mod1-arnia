@@ -93,7 +93,10 @@
     display: flex;
     justify-content: center;
     margin-top: 2%;
-    gap: 0.5em;
+    gap: 1.5em;
+}
+.pedras_home img{
+    width: 20px;
 }
 
 .lembretes_home {
@@ -282,7 +285,6 @@
     gap: 0.5em;
     border-radius: 16px;
 }
-
 .produtosResgatar img {
     width: 50%;
     height: 50%;
@@ -307,6 +309,14 @@
     width: 75%;
 }
 
+.produtosResgatar div>button:focus {
+    background-color: #AD8AC6;
+}
+
+.produtosResgatar div>button:hover {
+    background-color: #AD8AC6;
+}
+
 .produtos button {
     background-color: #502B6B;
     border-radius: 8px;
@@ -320,11 +330,11 @@
 @media screen and (max-width: 480px) {
     body {
         overflow-x: hidden;
-        /* width: 100vw; */
     }
 
     .topo {
-        height: 20%;
+        height: 90%;
+        max-height: 30em;
     }
 
     .navbar {
@@ -409,14 +419,8 @@
         padding: 1.0em 0 0 0;
     }
 
-    .pedras_home img {
-        width: 8%;
-        height: 10%;
-    }
-
-    .pedras_home img:first-child,
-    img:last-child {
-        width: 6%;
+    .pedras_home img{
+        width: 20px;
     }
 
     .lembretes_home {
@@ -432,10 +436,10 @@
     }
 
     .barra-pesquisa {
-        width: 330px;
-        height: 54px;
+        width: 90%;
+        height: 3em;
         position: relative;
-        top: 2em;
+        bottom: 20px;
     }
 
     .barra-pesquisa img {

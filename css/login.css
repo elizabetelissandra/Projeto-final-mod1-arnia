@@ -94,7 +94,7 @@ button{
     }
     .imgLogin{
         width: 90vw;
-        height: 40vh;
+        height: 50vh;
         
     }
     .imgLogin img{
@@ -102,9 +102,8 @@ button{
         max-width: 150em;
     }
     .login{
-        height: 60vh;
+        height: 50vh;
         width: 100vw;
-       
         border-bottom-left-radius: 0;
         border-top-right-radius: 30px;
     }
