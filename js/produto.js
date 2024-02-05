@@ -24,7 +24,7 @@ class Produto {
 let id = null;
 let userId = null;
 let produto = null;
-
+//-------------------------------------Caminhos para outras páginas---------------------------------------//
 const meusDados = () => {
   window.location = `../html/meus-dados.html?id=${id}&userId=${userId}`;
 };
@@ -34,22 +34,18 @@ const home = () => {
 const voltarPagina = () =>{
   window.location = `../html/home.html?userId=${userId}`
 }
-const resgatarProduto = async (id, userId) => {
-  salvarResgate(userId, produto);
-  
+const resgatarProduto = async (userId, id)  => {
+  salvarResgate(userId, id, produto);
 };
-
-const salvarResgate = async (userId, produto) => {
+//-------------------------------------Salvando o resgate na API---------------------------------------//
+const salvarResgate = async (userId, id, produto) => {
   const options = {
     month: "long",
     day: "numeric"
   };
-
+console.log(produto)
   const data = new Date().toLocaleDateString("pt-BR", options);
-  const usuario = await (await fetch(
-    `http://localhost:3000/usuarios/${userId}`
-  )).json();
-  
+  const usuario = await (await fetch(`http://localhost:3000/usuarios/${userId}`)).json();
   let resgates = usuario.resgates;
 
   const produt = new Produto(
@@ -60,6 +56,7 @@ const salvarResgate = async (userId, produto) => {
     produto[0].preco,
     data
   );
+
   resgates.push(produt);
 
   const user = new Usuario(
@@ -82,16 +79,14 @@ const salvarResgate = async (userId, produto) => {
   });
   window.location = `../html/produtoResgatado.html?id=${id}&userId=${userId}`;
 };
+
+//-------------------------------------Mostrando dados do produto selecionado via ID---------------------------------------//
 const mostrarProdutos = async(userId) => {
 
-  let dados = await fetch(
-    `http://localhost:3000/produtos?id=${id}`
-  )
-  produto = await dados.json();
+  produto = await(await fetch(`http://localhost:3000/produtos?id=${id}`)).json()
+
   const divProdutosSelecionados = document.querySelector(".produtoSelecionado");
-  console.log(produto);
-  console.log(userId)
-  
+
   divProdutosSelecionados.innerHTML = `
     <div>
         <img src="${produto[0].imagem}" alt="">
@@ -100,15 +95,13 @@ const mostrarProdutos = async(userId) => {
         <h2 class='nome-produto'>${produto[0].nome}</h2>
         <span> Por: <b>${produto[0].preco}</b> <i class="fa-regular fa-gem"></i></span>
         <p>${produto[0].descricao}</p>
-        <button class='resgatar' onclick="resgatarProduto('${id}','${userId}')"> Resgatar</button>
+        <button class='resgatar' onclick="resgatarProduto('${userId}','${id}', '${produto}')"> Resgatar</button>
     </div>
     `;
 };
-
+//-------------------------------------Mostrando dados na navbar---------------------------------------//
 const mostrarUsuario = async userId => {
-  const usuario = await (await fetch(
-    `http://localhost:3000/usuarios/${userId}`
-  )).json();
+  const usuario = await (await fetch(`http://localhost:3000/usuarios/${userId}`)).json();
   const bloco = document.querySelector(".usuario");
   const itensNav = document.querySelector('.linksNavbar')
   const itensNavMobile = document.querySelector('.linksNavbarMobile')
@@ -127,12 +120,17 @@ const mostrarUsuario = async userId => {
     <li><a href="#">Produtos</a></li>
     <li><a href="#" onclick="meusDados('${id}','${userId}')">Meu Perfil</a></li>`
 };
-const menuOnClick = () => {
-  document.getElementById("menu-bar").classList.toggle("change");
-  document.getElementById("nav").classList.toggle("change");
-  document.getElementById("menu-bg").classList.toggle("change-bg");
-}
 
+//-------------------------------------Função de ativação do menu(botão hamburguer)---------------------------------------//
+const menuOnClick = () => {
+  const linkMenu = document.getElementById("menu-bar");
+  if(linkMenu.style.display ==  "block"){
+      linkMenu.style.display = "none";
+      }else{
+        linkMenu.style.display = "block"
+}
+}
+//-------------------------------------Selecionando o id e u vindo na url---------------------------------------//
 const carregarSelecionado = async () => {
   const objetoParametros = new URLSearchParams(window.location.search);
   id = objetoParametros.get("id");

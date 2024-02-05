@@ -1,6 +1,6 @@
 let id = null
 let userId = null
-
+//-------------------------------------Caminhos para outras páginas---------------------------------------//
 const meusResgates = (userId) => {
   window.location = `../html/meus-resgates.html?userId=${userId}`;
 };
@@ -19,7 +19,7 @@ const sair = () => {
 const voltarPagina = () =>{
   window.location = `../html/home.html?userId=${userId}`
 }
-
+//-------------------------------------Mostrando dados na página do usuário e alguns botões---------------------------------------//
 const mostrarDados = (dados, userId) => {
     let info
     if(userId === 'ef1'){
@@ -51,7 +51,7 @@ const mostrarDados = (dados, userId) => {
                      </div>`
 
 };
-
+//-------------------------------------Mostrar dados do usuário na navbar---------------------------------------//
 const mostrarUsuario = async(userId) =>{
     const usuario = await(await fetch(`http://localhost:3000/usuarios/${userId}`)).json()
     const bloco = document.querySelector(".usuario");
@@ -72,12 +72,16 @@ const mostrarUsuario = async(userId) =>{
     <li><a href="#">Produtos</a></li>
     <li><a href="#" onclick="meusDados('${id}','${userId}')">Meu Perfil</a></li>`
 };
+//-------------------------------------Ativando menu do mobile(hamburguer)---------------------------------------//
 const menuOnClick = () => {
-  document.getElementById("menu-bar").classList.toggle("change");
-  document.getElementById("nav").classList.toggle("change");
-  document.getElementById("menu-bg").classList.toggle("change-bg");
+  const linkMenu = document.getElementById("menu-bar");
+  if(linkMenu.style.display ==  "block"){
+      linkMenu.style.display = "none";
+      }else{
+        linkMenu.style.display = "block"
 }
-
+}
+//-------------------------------------Carregando e separando o id e userID que vem como parametro na URL---------------------------------------//
 const carregarDados = async () => {
   
     const objetoParametros = new URLSearchParams(window.location.search)
@@ -92,7 +96,5 @@ const carregarDados = async () => {
     console.log(dados);
 
   mostrarDados(dados, userId);
-  
-  
 };
 carregarDados();

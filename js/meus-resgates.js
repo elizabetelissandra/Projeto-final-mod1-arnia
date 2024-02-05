@@ -1,6 +1,6 @@
 let id = null
 let userId
-
+//-------------------------------------Caminhos para outras páginas---------------------------------------//
 const meusDados = () => {
     window.location = `../html/meus-dados.html?id=${id}&userId=${userId}`
 }
@@ -16,7 +16,7 @@ const sair = () => {
 const voltarPagina = () =>{
     window.location = `../html/home.html?userId=${userId}`
 }
-
+//-------------------------------------Resgatando "resgates" da API, e mostrando na página via innerHTML---------------------------------------//
 const mostrarResgates = (dadosApi) => {
     const resgate = document.querySelector('.resgates')
     
@@ -41,6 +41,7 @@ const mostrarResgates = (dadosApi) => {
     });
 
 }
+//-------------------------------------Mostrando dados na navbar---------------------------------------//
 const mostrarUsuario = async userId => {
     const usuario = await (await fetch(`http://localhost:3000/usuarios/${userId}`)).json();
     console.log(userId)
@@ -62,13 +63,16 @@ const mostrarUsuario = async userId => {
     <li><a href="#">Produtos</a></li>
     <li><a href="#" onclick="meusDados('${id}','${userId}')">Meu Perfil</a></li>`
 };
-
+//-------------------------------------Ativando menu do mobile(hamburguer)---------------------------------------//
 const menuOnClick = () => {
-  document.getElementById("menu-bar").classList.toggle("change");
-  document.getElementById("nav").classList.toggle("change");
-  document.getElementById("menu-bg").classList.toggle("change-bg");
-}
-
+    const linkMenu = document.getElementById("menu-bar");
+    if(linkMenu.style.display ==  "block"){
+        linkMenu.style.display = "none";
+        }else{
+          linkMenu.style.display = "block"
+  }
+  }
+//-------------------------------------Carregando e separando o id e userID que vem como parametro na URL---------------------------------------//
 const carregarResgates = async() => {
     const objetoParametros = new URLSearchParams(window.location.search);
     console.log(objetoParametros);

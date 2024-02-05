@@ -1,8 +1,8 @@
 body{
     background-image: url(../img/banner-abertura.png);
     background-color: #502B6B;
-    background-size:cover;
-    background-repeat:no-repeat;
+    background-size:190em;
+    background-repeat: no-repeat;
     max-height: 100vh;
     
 }
@@ -27,7 +27,7 @@ body{
     border-radius: 16px;
     font-size: 25px;
 }
-
+/* Media querie  para mobile e tablet */
 
 @media screen and (max-width: 480px) {
     body{
@@ -39,6 +39,7 @@ body{
     .divAbertura{
         display: flex;
         justify-content: space-between;
+        width: 100vw;
         height: 100vh;
         margin: 0;
     }

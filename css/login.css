@@ -85,6 +85,7 @@ button{
     outline: none;
     border: none;
 }
+/*Inicio do media querie para mobile e tablet*/
 
 @media (max-width: 480px) {
     .containerLogin{
@@ -92,11 +93,13 @@ button{
         align-items: center;
     }
     .imgLogin{
+        width: 90vw;
         height: 40vh;
         
     }
     .imgLogin img{
-        width: 20em;
+        width: 90%;
+        max-width: 150em;
     }
     .login{
         height: 60vh;
@@ -105,11 +108,23 @@ button{
         border-bottom-left-radius: 0;
         border-top-right-radius: 30px;
     }
+    .faca-login{
+        width: 90%;
+        display: block;
+    }
     .faca-login span{
         font-size: 16px;
     }
     .faca-login h1{
         font-size: 24px;
+    }
+    .input{
+        padding: 0;
+        width: 90vw;
+    }
+    .input input{
+        margin-left: 10px;
+        width: 80vw;
     }
     
 }

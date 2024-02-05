@@ -1,7 +1,7 @@
 let id = null
 let dados = null
 let userId = null
-
+//-------------------------------------Caminhos para outras páginas---------------------------------------//
 const meusDados = (id, userId) => {
     window.location = `../html/meus-resgates.html?id=${id}&userId=${userId}`;
 };
@@ -9,10 +9,9 @@ const meusDados = (id, userId) => {
 const voltarPagina = () =>{
     window.location = `../html/home.html?userId=${userId}`
 }
-
+//-------------------------------------Resgatando produto da API, e mostrando na página via innerHTML---------------------------------------//
 const mostrarProdutos = async(id, userId) => {
-    const resposta = await fetch(`http://localhost:3000/produtos?id=${id}`)
-    const produtos = await resposta.json()
+    const produtos = await(await fetch(`http://localhost:3000/produtos?id=${id}`)).json()
     const usuario = await(await fetch(`http://localhost:3000/usuarios/${userId}`)).json()
     const conteudoResgatado = document.querySelector('.produtoresgatado')
     conteudoResgatado.innerHTML +=
@@ -42,6 +41,7 @@ const mostrarProdutos = async(id, userId) => {
     </div>
     `
 }
+//-------------------------------------Mostrando dados na navbar---------------------------------------//
 const mostrarUsuario = async(id, userId) =>{
     const usuario = await(await fetch(`http://localhost:3000/usuarios/${userId}`)).json()
     const bloco = document.querySelector(".usuario");
@@ -62,12 +62,16 @@ const mostrarUsuario = async(id, userId) =>{
     <li><a href="#">Produtos</a></li>
     <li><a href="#" onclick="meusDados('${id}','${userId}')">Meu Perfil</a></li>`
 };
+//-------------------------------------Ativando menu do mobile(hamburguer)---------------------------------------//
 const menuOnClick = () => {
-  document.getElementById("menu-bar").classList.toggle("change");
-  document.getElementById("nav").classList.toggle("change");
-  document.getElementById("menu-bg").classList.toggle("change-bg");
-}
-
+    const linkMenu = document.getElementById("menu-bar");
+    if(linkMenu.style.display ==  "block"){
+        linkMenu.style.display = "none";
+        }else{
+          linkMenu.style.display = "block"
+  }
+  }
+//-------------------------------------Carregando e separando o id e userID que vem como parametro na URL---------------------------------------//
 const carregarSelecionado = async() => {
     const objetoParametros = new URLSearchParams(window.location.search)
     id = objetoParametros.get('id')
