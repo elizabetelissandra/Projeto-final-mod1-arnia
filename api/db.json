@@ -61,30 +61,6 @@
           "nome": "Notebook ABC",
           "preco": "5",
           "data": "5 de fevereiro"
-        },
-        {
-          "descricao": "É tão fácil deslizar o mouse. Com o seu mousepad você poderá preencher a tela do seu computador com cliques. Sua superfície elaborada dará precisão e conforto aos seus movimentos.",
-          "id": "4",
-          "imagem": "../img/produtos/81lHWGeWtGL._AC_SL1500_.jpg",
-          "nome": "Mouse Pad Gamer Iluminado",
-          "preco": "2",
-          "data": "5 de fevereiro"
-        },
-        {
-          "descricao": "Um smartphone avançado com câmera de alta resolução e processador rápido.",
-          "id": "3",
-          "imagem": "https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2023/03/15/bd2699709ff9b92ed09de2a756837446.jpg?quality=80&zoom=1&ssl=1",
-          "nome": "Smartphone A31",
-          "preco": "2",
-          "data": "5 de fevereiro"
-        },
-        {
-          "descricao": "Teclado Gamer Redragon Mecânico Mitra K551 Anti-Ghost RGB Switch Outemu Blue, ABNT 2",
-          "id": "1",
-          "imagem": "https://static.wixstatic.com/media/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg/v1/fill/w_784,h_784,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg",
-          "nome": "Teclado Mecánico Redragon Mitra",
-          "preco": "5",
-          "data": "5 de fevereiro"
         }
       ],
       "senha": "admin"
@@ -112,62 +88,6 @@
           "nome": "Notebook ABC",
           "preco": "5",
           "data": "31 de janeiro"
-        },
-        {
-          "descricao": "Teclado Gamer Redragon Mecânico Mitra K551 Anti-Ghost RGB Switch Outemu Blue, ABNT 2",
-          "id": "1",
-          "imagem": "https://static.wixstatic.com/media/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg/v1/fill/w_784,h_784,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg",
-          "nome": "Teclado Mecánico Redragon Mitra",
-          "preco": "5",
-          "data": "2 de fevereiro"
-        },
-        {
-          "descricao": "Teclado Gamer Redragon Mecânico Mitra K551 Anti-Ghost RGB Switch Outemu Blue, ABNT 2",
-          "id": "1",
-          "imagem": "https://static.wixstatic.com/media/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg/v1/fill/w_784,h_784,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg",
-          "nome": "Teclado Mecánico Redragon Mitra",
-          "preco": "5",
-          "data": "2 de fevereiro"
-        },
-        {
-          "descricao": "Teclado Gamer Redragon Mecânico Mitra K551 Anti-Ghost RGB Switch Outemu Blue, ABNT 2",
-          "id": "1",
-          "imagem": "https://static.wixstatic.com/media/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg/v1/fill/w_784,h_784,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg",
-          "nome": "Teclado Mecánico Redragon Mitra",
-          "preco": "5",
-          "data": "2 de fevereiro"
-        },
-        {
-          "descricao": "Um notebook potente com processador quad-core, SSD rápido e tela Full HD.",
-          "id": "2",
-          "imagem": "../img/Produtos/51ydgHcdC9L._AC_SL1000_.jpg",
-          "nome": "Notebook ABC",
-          "preco": "5",
-          "data": "2 de fevereiro"
-        },
-        {
-          "descricao": "Teclado Gamer Redragon Mecânico Mitra K551 Anti-Ghost RGB Switch Outemu Blue, ABNT 2",
-          "id": "1",
-          "imagem": "https://static.wixstatic.com/media/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg/v1/fill/w_784,h_784,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg",
-          "nome": "Teclado Mecánico Redragon Mitra",
-          "preco": "5",
-          "data": "4 de fevereiro"
-        },
-        {
-          "descricao": "Teclado Gamer Redragon Mecânico Mitra K551 Anti-Ghost RGB Switch Outemu Blue, ABNT 2",
-          "id": "1",
-          "imagem": "https://static.wixstatic.com/media/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg/v1/fill/w_784,h_784,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg",
-          "nome": "Teclado Mecánico Redragon Mitra",
-          "preco": "5",
-          "data": "4 de fevereiro"
-        },
-        {
-          "descricao": "Um notebook potente com processador quad-core, SSD rápido e tela Full HD.",
-          "id": "2",
-          "imagem": "../img/Produtos/51ydgHcdC9L._AC_SL1000_.jpg",
-          "nome": "Notebook ABC",
-          "preco": "5",
-          "data": "5 de fevereiro"
         }
       ],
       "senha": "123456"
