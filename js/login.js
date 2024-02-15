@@ -17,7 +17,7 @@ formulario.addEventListener("submit", async event => {
 });
 
 const verificarCredenciaisUsuario = async (email, senha) => {
-    const url = 'https://api-projeto-final-arnia-ws0l.onrender.com/usuarios';
+    const url = 'http://localhost:3000/usuarios';
 
     const usuarios = await(await fetch(url)).json();
     const user = []

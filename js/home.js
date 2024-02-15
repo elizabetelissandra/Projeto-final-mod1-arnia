@@ -33,7 +33,7 @@ const mostrarDados = (produtos) => {
 };
 //Mostrando informações no cabeçalho e carregar os dados do usuário
 const mostrarUsuario = async(userId) =>{
-  const usuario = await(await fetch(`https://api-projeto-final-arnia-ws0l.onrender.com/usuarios/${userId}`)).json()
+  const usuario = await(await fetch(`http://localhost:3000/usuarios/${userId}`)).json()
   console.log(usuario)
   const bloco = document.querySelector('.usuario')
   const blocoSaldo = document.querySelector('.saldo_home')
@@ -76,7 +76,7 @@ const carregarDados = async () => {
    
   mostrarUsuario(userId)
 
-  const produtos = await(await fetch("https://api-projeto-final-arnia-ws0l.onrender.com/produtos")).json();  
+  const produtos = await(await fetch("http://localhost:3000/produtos")).json();  
   console.log(produtos);
   
   mostrarDados(produtos);

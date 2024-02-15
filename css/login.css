@@ -1,30 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Sora:wght@100..800&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: "Sora", sans-serif;
 }
-body{
+
+body {
     background-image: url(../img/banner-abertura.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.containerLogin{
-display: flex;
 
+.containerLogin {
+    display: flex;
 }
-.imgLogin{
+
+.imgLogin {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50vw;
     height: 100vh;
 }
-.imgLogin img{
+
+.imgLogin img {
     width: 50%;
 }
 
-.login{
+.login {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,44 +40,45 @@ display: flex;
     border-bottom-left-radius: 32px;
 }
 
-.faca-login{
+.faca-login {
     margin: 0 auto;
 }
 
-.login span{
+.login span {
     font-size: 18px;
     color: #3E4C76;
 }
 
-.login h1{
+.login h1 {
     color: #502B6B;
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 0.5em;
 }
 
-label{
+label {
     margin-left: 0.5em;
     color: darkgrey;
 }
-input{
+
+input {
     border: none;
-    outline:none;
-    padding:0.5em;
+    outline: none;
+    padding: 0.5em;
     font-size: 18px;
     font-weight: 500;
     width: 95%;
 }
 
-.input{
-  padding: 0.5em;
-  border: 1px solid rgb(89, 89, 95);
-  margin: 0.9em 0;
-  border-radius: 15px;
-  width: 22em;
+.input {
+    padding: 0.5em;
+    border: 1px solid rgb(89, 89, 95);
+    margin: 0.9em 0;
+    border-radius: 15px;
+    width: 22em;
 }
 
-button{
+button {
     background-color: #502B6B;
     color: white;
     width: 100%;
@@ -85,45 +90,54 @@ button{
     outline: none;
     border: none;
 }
-/*Inicio do media querie para mobile e tablet*/
+
+/*Inicio do media querie para mobile*/
 
 @media (max-width: 480px) {
-    .containerLogin{
+    .containerLogin {
         flex-direction: column;
         align-items: center;
     }
-    .imgLogin{
+
+    .imgLogin {
         width: 90vw;
         height: 50vh;
-        
+
     }
-    .imgLogin img{
+
+    .imgLogin img {
         width: 90%;
         max-width: 150em;
     }
-    .login{
+
+    .login {
         height: 50vh;
         width: 100vw;
         border-bottom-left-radius: 0;
         border-top-right-radius: 30px;
     }
-    .faca-login{
+
+    .faca-login {
         width: 90%;
         display: block;
     }
-    .faca-login span{
+
+    .faca-login span {
         font-size: 16px;
     }
-    .faca-login h1{
+
+    .faca-login h1 {
         font-size: 24px;
     }
-    .input{
+
+    .input {
         padding: 0;
         width: 90vw;
     }
-    .input input{
+
+    .input input {
         margin-left: 10px;
         width: 80vw;
     }
-    
+
 }

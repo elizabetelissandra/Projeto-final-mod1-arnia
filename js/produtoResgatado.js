@@ -11,8 +11,8 @@ const voltarPagina = () =>{
 }
 //-------------------------------------Resgatando produto da API, e mostrando na página via innerHTML---------------------------------------//
 const mostrarProdutos = async(id, userId) => {
-    const produtos = await(await fetch(`https://api-projeto-final-arnia-ws0l.onrender.com/produtos?id=${id}`)).json()
-    const usuario = await(await fetch(`https://api-projeto-final-arnia-ws0l.onrender.com/usuarios/${userId}`)).json()
+    const produtos = await(await fetch(`http://localhost:3000/produtos?id=${id}`)).json()
+    const usuario = await(await fetch(`http://localhost:3000/usuarios/${userId}`)).json()
     const conteudoResgatado = document.querySelector('.produtoresgatado')
     conteudoResgatado.innerHTML +=
     `
@@ -43,7 +43,7 @@ const mostrarProdutos = async(id, userId) => {
 }
 //-------------------------------------Mostrando dados na navbar---------------------------------------//
 const mostrarUsuario = async(id, userId) =>{
-    const usuario = await(await fetch(`https://api-projeto-final-arnia-ws0l.onrender.com/usuarios/${userId}`)).json()
+    const usuario = await(await fetch(`http://localhost:3000/usuarios/${userId}`)).json()
     const bloco = document.querySelector(".usuario");
   const itensNav = document.querySelector('.linksNavbar')
   const itensNavMobile = document.querySelector('.linksNavbarMobile')

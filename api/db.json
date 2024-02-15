@@ -1,32 +1,60 @@
 {
   "produtos": [
     {
-      "descricao": "Teclado Gamer Redragon Mecânico Mitra K551 Anti-Ghost RGB Switch Outemu Blue, ABNT 2",
+      "descricao": "Equipado com switches Outemu Blue, que oferecem um feedback táctil e sonoro agradável. Os switches Blue são ideais para jogadores que buscam uma resposta rápida e precisa, pois possuem um gatilho suave e um som alto. ",
       "id": "1",
-      "imagem": "https://static.wixstatic.com/media/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg/v1/fill/w_784,h_784,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/71a6c2_eaff8afe5c624368bdcd94a46f10917e~mv2.jpg",
-      "nome": "Teclado Mecánico Redragon Mitra",
+      "imagem": "https://images.kabum.com.br/produtos/fotos/469640/teclado-gamer-motospeed-abnt2-branco-switch-blue-ck61_1701782671_gg.jpg",
+      "nome": "Teclado Gamer Motospeed",
       "preco": "5"
     },
     {
-      "descricao": "Um notebook potente com processador quad-core, SSD rápido e tela Full HD.",
+      "descricao": "O ASUS Vivobook 16X é o notebook perfeito para quem precisa de desempenho de alto nível. Com o processador Intel Core Série H da 12ª geração e a placa de vídeo NVIDIA GeForce RTX 2050, você pode criar, editar e jogar com facilidade. O armazenamento SSD de 512 GB, a memória DDR4 de até 16 GB e o Wi-Fi 6E5 ultrarrápido garantem que você tenha espaço, velocidade e conectividade para fazer tudo o que precisa. Com o ASUS Vivobook 16X, você pode transformar suas ideias em realidade.",
       "id": "2",
-      "imagem": "../img/Produtos/51ydgHcdC9L._AC_SL1000_.jpg",
-      "nome": "Notebook ABC",
-      "preco": "5"
+      "imagem": "https://images.kabum.com.br/produtos/fotos/477142/notebook-gamer-asus-vivobook-16x-intel-core-i5-12450h-8gb-ssd-512gb-tela-16-rtx-2050-win-11-preto-k3605zf-n1198w_1704277052_gg.jpg",
+      "nome": "Notebook Gamer ASUS Vivobook",
+      "preco": "20"
     },
     {
-      "descricao": "Um smartphone avançado com câmera de alta resolução e processador rápido.",
+      "descricao": "O Samsung Galaxy A23 é um smartphone Android de bom nível, ótimo para fotos, que pode satisfazer até o mais exigente dos usuários. Tem uma enorme tela Touchscreen de 6.6 polegadas com uma resolução de 2408x1080 pixel. Sobre as características deste Samsung Galaxy A23 na verdade não falta nada. Começando pelo LTE 4G que permite a transferência de dados e excelente navegação na internet, além de conectividade Wi-fi e GPS. Tem também leitor multimídia, rádio, videoconferência e bluetooth. Enfatizamos a boa memória interna de 128 GB com a possibilidade de expansão.",
       "id": "3",
-      "imagem": "https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2023/03/15/bd2699709ff9b92ed09de2a756837446.jpg?quality=80&zoom=1&ssl=1",
-      "nome": "Smartphone A31",
-      "preco": "2"
+      "imagem": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/422459/Samsung-Galaxy-S23-Plus-256GB-8GB-5g-C-mera-Tripla-50Mp-Selfie-12Mp-Tela-6-6-Polegadas-Preto_1688558911_gg.jpg",
+      "nome": "Samsung Galaxy S23 Plus 256GB",
+      "preco": "25"
     },
     {
       "descricao": "É tão fácil deslizar o mouse. Com o seu mousepad você poderá preencher a tela do seu computador com cliques. Sua superfície elaborada dará precisão e conforto aos seus movimentos.",
       "id": "4",
-      "imagem": "../img/produtos/81lHWGeWtGL._AC_SL1500_.jpg",
+      "imagem": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/189847/Mousepad-Gamer-RGB-Redragon-R-gido-Epeius-35-X-26-cm-Borda-Com-LED-Ajuste-de-Ilumina-o-Touch-P009_1705693718_gg.jpg",
       "nome": "Mouse Pad Gamer Iluminado",
-      "preco": "2"
+      "preco": "5"
+    },
+    {
+      "descricao": "Desfrute do carregamento do seu PS5, extremamente rápido com o SSD de altíssima velocidade, uma imersão mais profunda com suporte a feedback tátil, gatilhos adaptáveis e áudio 3D, além de uma geração inédita de jogos incríveis para PlayStation.",
+      "id": "5",
+      "imagem": "https://images.kabum.com.br/produtos/fotos/238671/console-sony-playstation-5_1634132554_gg.jpg",
+      "nome": "Console Playstation 5 Sony",
+      "preco": "25"
+    },
+    {
+      "descricao": "Se você está buscando uma experiência imersiva nos mais variados tipos de jogos como estratégia, RPS, corrida, esse monitor é ideal para você. Com a tela em resolução QHD UltraWide (resolução 3440x1440), você ganha 30% a mais de área de tela e assim não perde nenhum detalhe do jogo. E mais, o modelo ainda conta com o som estéreo 7W com MaxxAudio. Além disso, com a tela na proporção 21:9 você também ganha mais produtividade, já que pode acessar dois conteúdos simultaneamente na mesma tela, podendo assim jogar e stremar ou trabalhar ao mesmo tempo.",
+      "id": "6",
+      "imagem": "https://images.kabum.com.br/produtos/fotos/472908/monitor-gamer-lg-34-polegadas-curvo-led-wqhd-ultrawide-160hz-1ms-displayport-e-hdmi-amd-freesync-premium-hdr10-99-srgb-34gp63a-b_1689879423_gg.jpg",
+      "nome": "Monitor Gamer LG UltraGear LG 34",
+      "preco": "20"
+    },
+    {
+      "descricao": "O C920s oferece vídeo Full HD incrivelmente nítido e detalhado (1080p a 30 qps) com lente de vidro full HD, campo de visão de 78 ° e correção automática de luz HD - além de microfones duplos para som estéreo nítido. Tudo de que você precisa para ter uma ótima aparência em chamadas em conferência e gravar.",
+      "id": "7",
+      "imagem": "https://images.kabum.com.br/produtos/fotos/103431/webcam-logitech-c920s-pro-full-hd-1080p-30-fps-audio-estereo-com-microfones-960-001257_1613999712_gg.jpg",
+      "nome": "Webcam Full HD Logitech C920s",
+      "preco": "8"
+    },
+    {
+      "descricao": "Com uma grande capacidade de 2,4 litros, o bebedouro para gatos e cães lorben pode fornecer água fresquinha e purificada para seu pet por um longo período, sem necessidade de reabastecer com frequência. Mesmo que você saia por um dia inteiro, não precisa se preocupar com seus animais de estimação não recebendo bebida fresca suficiente.",
+      "id": "8",
+      "imagem": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/431954/Bebedouro-Para-Gatos-E-C-es-Lorben-2-4-Litros-Led-Usb-Filtragem-e-Purifica-o_1677673116_gg.jpg",
+      "nome": "Bebedouro Para Gatos E Cães Lorben",
+      "preco": "12"
     }
   ],
   "usuarios": [
@@ -35,7 +63,7 @@
       "id": "ef1",
       "imagem": "https://img.freepik.com/fotos-premium/belo-perfil-feminino-mulher-bonita-com-um-penteado-fofo-com-flores-em-fundo-colorido-generative-ai_58409-30260.jpg",
       "nome": "Ana Ester",
-      "joias": "283",
+      "joias": "239",
       "login": "admin",
       "resgates": [
         {
@@ -61,6 +89,30 @@
           "nome": "Notebook ABC",
           "preco": "5",
           "data": "5 de fevereiro"
+        },
+        {
+          "descricao": "Com uma grande capacidade de 2,4 litros, o bebedouro para gatos e cães lorben pode fornecer água fresquinha e purificada para seu pet por um longo período, sem necessidade de reabastecer com frequência. Mesmo que você saia por um dia inteiro, não precisa se preocupar com seus animais de estimação não recebendo bebida fresca suficiente.",
+          "id": "8",
+          "imagem": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/431954/Bebedouro-Para-Gatos-E-C-es-Lorben-2-4-Litros-Led-Usb-Filtragem-e-Purifica-o_1677673116_gg.jpg",
+          "nome": "Bebedouro Para Gatos E Cães Lorben",
+          "preco": "12",
+          "data": "15 de fevereiro"
+        },
+        {
+          "descricao": "Com uma grande capacidade de 2,4 litros, o bebedouro para gatos e cães lorben pode fornecer água fresquinha e purificada para seu pet por um longo período, sem necessidade de reabastecer com frequência. Mesmo que você saia por um dia inteiro, não precisa se preocupar com seus animais de estimação não recebendo bebida fresca suficiente.",
+          "id": "8",
+          "imagem": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/431954/Bebedouro-Para-Gatos-E-C-es-Lorben-2-4-Litros-Led-Usb-Filtragem-e-Purifica-o_1677673116_gg.jpg",
+          "nome": "Bebedouro Para Gatos E Cães Lorben",
+          "preco": "12",
+          "data": "15 de fevereiro"
+        },
+        {
+          "descricao": "O ASUS Vivobook 16X é o notebook perfeito para quem precisa de desempenho de alto nível. Com o processador Intel Core Série H da 12ª geração e a placa de vídeo NVIDIA GeForce RTX 2050, você pode criar, editar e jogar com facilidade. O armazenamento SSD de 512 GB, a memória DDR4 de até 16 GB e o Wi-Fi 6E5 ultrarrápido garantem que você tenha espaço, velocidade e conectividade para fazer tudo o que precisa. Com o ASUS Vivobook 16X, você pode transformar suas ideias em realidade.",
+          "id": "2",
+          "imagem": "https://images.kabum.com.br/produtos/fotos/477142/notebook-gamer-asus-vivobook-16x-intel-core-i5-12450h-8gb-ssd-512gb-tela-16-rtx-2050-win-11-preto-k3605zf-n1198w_1704277052_gg.jpg",
+          "nome": "Notebook Gamer ASUS Vivobook",
+          "preco": "20",
+          "data": "15 de fevereiro"
         }
       ],
       "senha": "admin"
@@ -70,7 +122,7 @@
       "id": "as2",
       "imagem": "https://upload.wikimedia.org/wikipedia/commons/4/43/Foto_Perfil.jpg",
       "nome": "José Bezerra",
-      "joias": "110",
+      "joias": "250",
       "login": "donoa1",
       "resgates": [
         {
@@ -88,6 +140,22 @@
           "nome": "Notebook ABC",
           "preco": "5",
           "data": "31 de janeiro"
+        },
+        {
+          "descricao": "É tão fácil deslizar o mouse. Com o seu mousepad você poderá preencher a tela do seu computador com cliques. Sua superfície elaborada dará precisão e conforto aos seus movimentos.",
+          "id": "4",
+          "imagem": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/189847/Mousepad-Gamer-RGB-Redragon-R-gido-Epeius-35-X-26-cm-Borda-Com-LED-Ajuste-de-Ilumina-o-Touch-P009_1705693718_gg.jpg",
+          "nome": "Mouse Pad Gamer Iluminado",
+          "preco": "5",
+          "data": "15 de fevereiro"
+        },
+        {
+          "descricao": "Com uma grande capacidade de 2,4 litros, o bebedouro para gatos e cães lorben pode fornecer água fresquinha e purificada para seu pet por um longo período, sem necessidade de reabastecer com frequência. Mesmo que você saia por um dia inteiro, não precisa se preocupar com seus animais de estimação não recebendo bebida fresca suficiente.",
+          "id": "8",
+          "imagem": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/431954/Bebedouro-Para-Gatos-E-C-es-Lorben-2-4-Litros-Led-Usb-Filtragem-e-Purifica-o_1677673116_gg.jpg",
+          "nome": "Bebedouro Para Gatos E Cães Lorben",
+          "preco": "12",
+          "data": "15 de fevereiro"
         }
       ],
       "senha": "123456"

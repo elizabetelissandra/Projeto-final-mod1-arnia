@@ -1,5 +1,5 @@
 const mostrarProdutos = async(id, userId) => {
-  let produtos = await(await fetch(`https://api-projeto-final-arnia-ws0l.onrender.com/produtos?id=${id}`)).json()
+  let produtos = await(await fetch(`http://localhost:3000/produtos?id=${id}`)).json()
   const divProdutosSelecionados = document.querySelector(".produtoSelecionado")
   console.log(produtos)
   console.log(id)
@@ -15,7 +15,7 @@ const mostrarProdutos = async(id, userId) => {
 }
 
 const mostrarUsuario = async(userId) => {
-  const usuario = await(await fetch(`https://api-projeto-final-arnia-ws0l.onrender.com/usuarios/${userId}`)).json()
+  const usuario = await(await fetch(`http://localhost:3000/usuarios/${userId}`)).json()
   console.log(usuario)
   const bloco = document.querySelector(".usuario")
   

@@ -6,7 +6,7 @@
 // const obterNomeUsuario = async login => {
 //   try {
 //     // Faz uma requisição à sua API para obter informações do usuário com base no email
-//     const resposta = await fetch(`https://api-projeto-final-arnia-ws0l.onrender.com/usuarios`);
+//     const resposta = await fetch(`http://localhost:3000/usuarios`);
 //     const dadosUsuario = await resposta.json();
 //     console.log(dadosUsuario);
 
@@ -129,12 +129,12 @@
 // };
 
 const carregarDados = async () => {
-  const dados = await fetch("https://api-projeto-final-arnia-ws0l.onrender.com/produtos");
+  const dados = await fetch("http://localhost:3000/produtos");
   console.log(dados);
   const produtos = await dados.json();
   console.log(produtos);
 
-  const login = await fetch("https://api-projeto-final-arnia-ws0l.onrender.com/login");
+  const login = await fetch("http://localhost:3000/login");
   const usuarioLogado = await login.json();
   console.log(usuarioLogado);
 
