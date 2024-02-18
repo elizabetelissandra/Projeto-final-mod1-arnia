@@ -45,7 +45,7 @@ const salvarResgate = async (userId, id, produto) => {
   };
 console.log(produto)
   const data = new Date().toLocaleDateString("pt-BR", options);
-  const usuario = await (await fetch(`http://localhost:3000/usuarios/${userId}`)).json();
+  const usuario = await (await fetch(`https://api-projeto-final-arnia-ws0l.onrender.com/usuarios/${userId}`)).json();
   let resgates = usuario.resgates;
 
   const produt = new Produto(
@@ -69,7 +69,7 @@ console.log(produto)
     resgates,
     usuario.senha
   );
-  const resposta = await fetch(`http://localhost:3000/usuarios/${userId}`, {
+  const resposta = await fetch(`https://api-projeto-final-arnia-ws0l.onrender.com/usuarios/${userId}`, {
     method: "PUT",
     headers: {
       Accept: "application/json, text/plain, */*",
@@ -83,7 +83,7 @@ console.log(produto)
 //-------------------------------------Mostrando dados do produto selecionado via ID---------------------------------------//
 const mostrarProdutos = async(userId) => {
 
-  produto = await(await fetch(`http://localhost:3000/produtos?id=${id}`)).json()
+  produto = await(await fetch(`https://api-projeto-final-arnia-ws0l.onrender.com/produtos?id=${id}`)).json()
 
   const divProdutosSelecionados = document.querySelector(".produtoSelecionado");
 
@@ -101,7 +101,7 @@ const mostrarProdutos = async(userId) => {
 };
 //-------------------------------------Mostrando dados na navbar---------------------------------------//
 const mostrarUsuario = async userId => {
-  const usuario = await (await fetch(`http://localhost:3000/usuarios/${userId}`)).json();
+  const usuario = await (await fetch(`https://api-projeto-final-arnia-ws0l.onrender.com/usuarios/${userId}`)).json();
   const bloco = document.querySelector(".usuario");
   const itensNav = document.querySelector('.linksNavbar')
   const itensNavMobile = document.querySelector('.linksNavbarMobile')
@@ -130,14 +130,14 @@ const menuOnClick = () => {
         linkMenu.style.display = "block"
 }
 }
-//-------------------------------------Selecionando o id e u vindo na url---------------------------------------//
+//-------------------------------------Selecionando o id vindo na url---------------------------------------//
 const carregarSelecionado = async () => {
   const objetoParametros = new URLSearchParams(window.location.search);
   id = objetoParametros.get("id");
 
   userId = objetoParametros.get("userId");
-  mostrarUsuario(userId);
+  mostrarUsuario(userId); //função linha 103//
 
-  mostrarProdutos(userId);
+  mostrarProdutos(userId); //função linha 84//
 };
 carregarSelecionado();

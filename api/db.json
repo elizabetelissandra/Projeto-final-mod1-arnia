@@ -63,7 +63,7 @@
       "id": "ef1",
       "imagem": "https://img.freepik.com/fotos-premium/belo-perfil-feminino-mulher-bonita-com-um-penteado-fofo-com-flores-em-fundo-colorido-generative-ai_58409-30260.jpg",
       "nome": "Ana Ester",
-      "joias": "239",
+      "joias": "184",
       "login": "admin",
       "resgates": [
         {
@@ -113,6 +113,38 @@
           "nome": "Notebook Gamer ASUS Vivobook",
           "preco": "20",
           "data": "15 de fevereiro"
+        },
+        {
+          "descricao": "Se você está buscando uma experiência imersiva nos mais variados tipos de jogos como estratégia, RPS, corrida, esse monitor é ideal para você. Com a tela em resolução QHD UltraWide (resolução 3440x1440), você ganha 30% a mais de área de tela e assim não perde nenhum detalhe do jogo. E mais, o modelo ainda conta com o som estéreo 7W com MaxxAudio. Além disso, com a tela na proporção 21:9 você também ganha mais produtividade, já que pode acessar dois conteúdos simultaneamente na mesma tela, podendo assim jogar e stremar ou trabalhar ao mesmo tempo.",
+          "id": "6",
+          "imagem": "https://images.kabum.com.br/produtos/fotos/472908/monitor-gamer-lg-34-polegadas-curvo-led-wqhd-ultrawide-160hz-1ms-displayport-e-hdmi-amd-freesync-premium-hdr10-99-srgb-34gp63a-b_1689879423_gg.jpg",
+          "nome": "Monitor Gamer LG UltraGear LG 34",
+          "preco": "20",
+          "data": "16 de fevereiro"
+        },
+        {
+          "descricao": "Desfrute do carregamento do seu PS5, extremamente rápido com o SSD de altíssima velocidade, uma imersão mais profunda com suporte a feedback tátil, gatilhos adaptáveis e áudio 3D, além de uma geração inédita de jogos incríveis para PlayStation.",
+          "id": "5",
+          "imagem": "https://images.kabum.com.br/produtos/fotos/238671/console-sony-playstation-5_1634132554_gg.jpg",
+          "nome": "Console Playstation 5 Sony",
+          "preco": "25",
+          "data": "17 de fevereiro"
+        },
+        {
+          "descricao": "Equipado com switches Outemu Blue, que oferecem um feedback táctil e sonoro agradável. Os switches Blue são ideais para jogadores que buscam uma resposta rápida e precisa, pois possuem um gatilho suave e um som alto. ",
+          "id": "1",
+          "imagem": "https://images.kabum.com.br/produtos/fotos/469640/teclado-gamer-motospeed-abnt2-branco-switch-blue-ck61_1701782671_gg.jpg",
+          "nome": "Teclado Gamer Motospeed",
+          "preco": "5",
+          "data": "17 de fevereiro"
+        },
+        {
+          "descricao": "Equipado com switches Outemu Blue, que oferecem um feedback táctil e sonoro agradável. Os switches Blue são ideais para jogadores que buscam uma resposta rápida e precisa, pois possuem um gatilho suave e um som alto. ",
+          "id": "1",
+          "imagem": "https://images.kabum.com.br/produtos/fotos/469640/teclado-gamer-motospeed-abnt2-branco-switch-blue-ck61_1701782671_gg.jpg",
+          "nome": "Teclado Gamer Motospeed",
+          "preco": "5",
+          "data": "17 de fevereiro"
         }
       ],
       "senha": "admin"
@@ -122,7 +154,7 @@
       "id": "as2",
       "imagem": "https://upload.wikimedia.org/wikipedia/commons/4/43/Foto_Perfil.jpg",
       "nome": "José Bezerra",
-      "joias": "250",
+      "joias": "225",
       "login": "donoa1",
       "resgates": [
         {
@@ -156,6 +188,22 @@
           "nome": "Bebedouro Para Gatos E Cães Lorben",
           "preco": "12",
           "data": "15 de fevereiro"
+        },
+        {
+          "descricao": "Equipado com switches Outemu Blue, que oferecem um feedback táctil e sonoro agradável. Os switches Blue são ideais para jogadores que buscam uma resposta rápida e precisa, pois possuem um gatilho suave e um som alto. ",
+          "id": "1",
+          "imagem": "https://images.kabum.com.br/produtos/fotos/469640/teclado-gamer-motospeed-abnt2-branco-switch-blue-ck61_1701782671_gg.jpg",
+          "nome": "Teclado Gamer Motospeed",
+          "preco": "5",
+          "data": "16 de fevereiro"
+        },
+        {
+          "descricao": "O ASUS Vivobook 16X é o notebook perfeito para quem precisa de desempenho de alto nível. Com o processador Intel Core Série H da 12ª geração e a placa de vídeo NVIDIA GeForce RTX 2050, você pode criar, editar e jogar com facilidade. O armazenamento SSD de 512 GB, a memória DDR4 de até 16 GB e o Wi-Fi 6E5 ultrarrápido garantem que você tenha espaço, velocidade e conectividade para fazer tudo o que precisa. Com o ASUS Vivobook 16X, você pode transformar suas ideias em realidade.",
+          "id": "2",
+          "imagem": "https://images.kabum.com.br/produtos/fotos/477142/notebook-gamer-asus-vivobook-16x-intel-core-i5-12450h-8gb-ssd-512gb-tela-16-rtx-2050-win-11-preto-k3605zf-n1198w_1704277052_gg.jpg",
+          "nome": "Notebook Gamer ASUS Vivobook",
+          "preco": "20",
+          "data": "17 de fevereiro"
         }
       ],
       "senha": "123456"

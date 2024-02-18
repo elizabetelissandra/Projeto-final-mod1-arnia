@@ -19,7 +19,7 @@ const sair = () => {
 }
 //-------------------------------------Mostrando dados na navbar---------------------------------------//
 const mostrarUsuario = async(userId) =>{
-    const usuario = await(await fetch(`http://localhost:3000/usuarios/${userId}`)).json()
+    const usuario = await(await fetch(`https://api-projeto-final-arnia-ws0l.onrender.com/usuarios/${userId}`)).json()
     const bloco = document.querySelector(".usuario");
   const itensNav = document.querySelector('.linksNavbar')
   const itensNavMobile = document.querySelector('.linksNavbarMobile')
@@ -58,7 +58,7 @@ const carregarDados = async () => {
     console.log(userId)  
     mostrarUsuario(userId)
 
-    const dados = await(await fetch("http://localhost:3000/usuarios")).json()
+    const dados = await(await fetch("https://api-projeto-final-arnia-ws0l.onrender.com/usuarios")).json()
     console.log(dados);
 ;
 

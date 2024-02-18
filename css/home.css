@@ -333,13 +333,13 @@
 }
 
 @media screen and (max-width: 480px) {
-    body {
+    /* body {
         overflow-x: hidden;
-    }
+    } */
 
     .topo {
         height: 90%;
-        max-height: 30em;
+        max-height: 40em;
     }
 
     .navbar {
@@ -389,12 +389,13 @@
         padding: 10px;
         text-decoration: none;
         text-align: center;
-        width: 100vw;
+        width: 95vw;
         color: white;
         border-top: 2px solid #1F2A4D;
     }
     .linksNavbarMobile{
-        display: block;
+        display: flex;
+        flex-direction: column;
         background-color: #734F8C;
         transition: background-color 1s ease 0s;
     }
@@ -403,7 +404,7 @@
         font-weight: bolder;
         background-color: #502B6B;
     }
-
+      
     .saldo_home {
         gap: 1.0em;
     }
@@ -444,7 +445,7 @@
         width: 90%;
         height: 3em;
         position: relative;
-        bottom: 20px;
+        top: 10px;
     }
 
     .barra-pesquisa img {
